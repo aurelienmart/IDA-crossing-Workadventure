@@ -1,69 +1,45 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-        <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
-        <style>
-            .margin-constraint{
-                /*On indique tout simplement une marge*/
-                margin-left: 20px;
-                margin-right: 20px;
-            }
+    <head prefix="og: https://ogp.me/ns#">
+        <link rel="stylesheet" href="styles.css" type="text/css">
+        <link rel="icon" href="home/ws_logo.jpg">
+        <title>17e étage virtuel</title>
 
-            .useful-width{
-                /*On règle ensuite la largeur utile puis on centre*/
-                max-width: 800px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .margin-constraint, .useful-width{
-                /*Si vous utilisez uniquement des div, cette dernière règle css n'est même pas nécessaire*/
-                display: block;
-                width: auto;
-            }
-        </style>
-        <script>
-            window.onload = function() {
-                var path = window.location.pathname;
-                if (path.endsWith('index.html')) {
-                    path = path.substr(path, path.length - 'index.html'.length);
-                }
-                var url = 'https://play.workadventu.re/_/global/'+window.location.host+path+'map.json';
-                document.getElementById('mapLink').href = url;
-                document.getElementById('mapLink2').href = url;
-                document.getElementById('mapLink').innerText = url;
-
-                var mapUrl = window.location.protocol+'//'+window.location.host+path+'map.json';
-                document.getElementById('mapUrl').innerText = mapUrl;
-
-                var gettingStartedLink = 'https://workadventu.re/getting-started?name=Map&mapUrl='+mapUrl;
-                document.getElementById('gettingStartedLink').href = gettingStartedLink;
-
-            };
-        </script>
+        <meta property="og:title" content="17e étage virtuel" />
+        <meta property="og:description" content="Il s'agit d'une représentation plus ou moins réaliste du 17e étage de la tour Franklin, dans un style retro-gaming. Vous pourrez vous balader dans l'étage, et surtout vous pourrez discuter facilement avec vos collègues, comme vous le feriez en open-space : en s'approchant et en parlant !" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dharkhar.github.io/map-workadventure/" />
+        <meta property="og:image" content="https://dharkhar.github.io/map-workadventure/home/ws_logo.jpg" />
+        <meta property="og:image:type" content="image/jpeg" >
     </head>
+
     <body>
-        <div class="useful-width">
-            <div style="text-align: center; margin-top: 3rem">
-                <img src="https://workadventu.re/img/logo.png" alt=""/>
-            </div>
-            <div class="nes-container with-title is-centered" style="margin-top: 3rem">
-                <p class="title">WorkAdventure map</p>
-                <p>This website contains a map for <a href="https://workadventu.re">Workadventu.re</a>.</p>
-            </div>
+        <div class="main-section">
+            <img src="home/ws_logo.jpg" style="height:120px;">
+            <div class="title" style="color: #fff;">Bienvenue au 17e !</div>
+            <div class="subtitle" style="color: #fff; margin-top: 10px; margin-bottom: 20px"><em>Ou presque</em></div>
 
-            <div class="nes-container with-title is-centered" style="margin-top: 1rem">
-                <p class="title">Test this map</p>
-                <p>You can test this map at <a id="mapLink" href=""></a>.</p>
-                <p><a id="mapLink2" href="" class="nes-btn is-primary">Test this map</a></p>
+            <div class="white-section">
+                <div class="subtitle" style="text-align: justify;">C'est quoi ?</div>
+                <p>
+                    Il s'agit d'une représentation plus ou moins réaliste du 17e étage de la tour Franklin, dans un style retro-gaming.
+                    Vous pourrez vous balader dans l'étage, et surtout vous pourrez discuter facilement avec vos collègues, comme vous le feriez en open-space : en s'approchant et en parlant !
+                </p>
+                <a href="https://play.workadventu.re/_/cdt/dharkhar.github.io/map-workadventure/map.json" target="_blank"><button class="button"><span>C'est parti !</span></button></a>
             </div>
-
-            <div class="nes-container with-title is-centered" style="margin-top: 1rem">
-                <p class="title">Happy with the result?</p>
-                <p>Register your room on Workadventu.re.</p>
-                <p><a id="gettingStartedLink" href="" class="nes-btn is-primary">Create a new room</a></p>
-                <p>or copy and paste the map URL in WorkAdventu.re's administration panel:</p>
-                <p><span id="mapUrl" style="color: gray" /></p>
+            <br/>
+            <div class="white-section">
+                <div class="subtitle" style="text-align: justify;">Astuces</div>
+                <ul>
+                    <li class="list-star">Pense à mettre cette page en favoris et à te connecter en début de journée, ce sera plus convivial !</li>
+                    <li class="list-micro">Le micro et la caméra ne s'activent que lorsque tu es proche de quelqu'un d'autre. C'est pratique pour les pauses cafés, mais aussi pour aller voir quelqu’un pour une question, comme tu le ferais dans l'open-space. Attention, on ne peut pas être plus de 4 dans un cercle de discussion.</li>
+                    <li class="list-security">Point sécurité : cette URL n'étant pas protégée, rien n'empêche une personne externe de squatter ce serveur. Attention donc à ne pas partager des documents de travail via cet outil ! Cela veut aussi dire que tu peux utiliser un autre PC pour garder le contact, pratique quand on est tout le temps sur un pc client.</li>
+                    <li class="list-mute">Sur la partie droite de l'étage, se trouvent des call box. Une fois dans un box, le son et le micro sont automatiquement coupés pour ne pas être dérangé. Pratique si tu dois partir en call !</li>
+                    <li class="list-zoom">Tu peux dézoomer la page web pour élargir un peu la vue, un dézoom à 70% semble un bon compromis.</li>
+                    <li class="list-email">Pour toute question, idée géniale, envie de participer : <a href="mailto:thomas.niederberger@wavestone.com">thomas.niederberger@wavestone.com</a>.</li>
+                    <li class="list-code">Pour les curieux et curieuses, le code de la map est sur <a class="link-icon" style="background-image: url(home/github_18px.png)" href="https://github.com/Dharkhar/map-workadventure" target="_blank">Github</a>, et cette petite web app est basée sur <a href="https://workadventu.re">Workadventu.re</a>.</li>
+                </ul>
+                <img src="home/tutorial.png" style="display: block;margin-left: auto;margin-right: auto;width: 100%;">
             </div>
         </div>
     </body>
