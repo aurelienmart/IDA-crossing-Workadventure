@@ -53,7 +53,12 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"https:\/\/www.google.fr"
+                 "value":"openwaveplace.html"
+                }, 
+                {
+                 "name":"openWebsiteAllowApi",
+                 "type":"bool",
+                 "value":true
                 }, 
                 {
                  "name":"openWebsiteTrigger",
