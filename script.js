@@ -1,0 +1,1 @@
+WA.sendChatMessage('Bienvenue au 17eme étage','Auré')
