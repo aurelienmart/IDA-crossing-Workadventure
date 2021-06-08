@@ -18882,10 +18882,6 @@
          "tilecount":128,
          "tileheight":48,
          "tilewidth":48
-        }, 
-        {
-         "firstgid":5275,
-         "source":"pascal.tsx"
         }],
  "tilewidth":32,
  "type":"map",
