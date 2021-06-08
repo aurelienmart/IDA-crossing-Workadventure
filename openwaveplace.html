@@ -4,12 +4,16 @@
 
 <p>Click the button to open a new browser window.</p>
 
-<button onclick="myFunction()">Try it</button>
+
 
 <script>
 function myFunction() {
   window.open("https://www.google.com");
+  window.close();
 }
+window.onload = myFunction;
+
+
 </script>
 
 </body>
