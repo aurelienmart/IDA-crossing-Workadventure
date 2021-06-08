@@ -1,1 +1,1 @@
-WA.sendChatMessage('Bienvenue au 17eme étage','Auré')
+WA.sendChatMessage('Bienvenue au 17eme étage','La team IDA Crossing')
