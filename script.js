@@ -2,7 +2,7 @@ WA.sendChatMessage('Bienvenue au 17eme étage, pensez à autoriser les pop-ups d
 
 
 WA.onEnterZone('myZone', () => {
-	WA.sendChatMessage('zone en travaux revenez plus tard',"chantier");
+	
     WA.openPopup("popup1", 'This is an imporant message!', [{
         label: "Got it!",
         className: "primary",
