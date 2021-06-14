@@ -10,7 +10,7 @@ WA.onEnterZone("meeting",()=>{
 let helloWorldPopup;
 
 // Open the popup when we enter a given zone
-travaux = WA.onEnterZone('myZone', () => {
+travaux= WA.onEnterZone('myZone', () => {
     WA.openPopup("popup1", 'Cette zone est en travaux, revenez plus tard', [{
         label: "Close",
         className: "primary",
