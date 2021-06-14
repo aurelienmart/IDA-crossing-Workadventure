@@ -263,15 +263,15 @@
                  "y":833.333333333333
                 }, 
                 {
-                 "height":190.666666666667,
+                 "height":86.6666666666666,
                  "id":9,
                  "name":"popup1",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":253.333333333333,
-                 "x":884,
-                 "y":370.666666666667
+                 "width":97.3333333333334,
+                 "x":808,
+                 "y":226.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -280,7 +280,7 @@
          "y":0
         }],
  "nextlayerid":39,
- "nextobjectid":10,
+ "nextobjectid":13,
  "orientation":"orthogonal",
  "properties":[
         {
