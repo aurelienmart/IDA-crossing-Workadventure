@@ -186,28 +186,6 @@
         }, 
         {
          "draworder":"topdown",
-         "id":35,
-         "name":"popup",
-         "objects":[
-                {
-                 "height":158.666666666667,
-                 "id":6,
-                 "name":"popup1",
-                 "rotation":0,
-                 "type":"",
-                 "visible":true,
-                 "width":229.333333333333,
-                 "x":884,
-                 "y":412
-                }],
-         "opacity":1,
-         "type":"objectgroup",
-         "visible":true,
-         "x":0,
-         "y":0
-        }, 
-        {
-         "draworder":"topdown",
          "id":3,
          "name":"floorLayer",
          "objects":[
@@ -232,6 +210,28 @@
                  "width":472.727272727273,
                  "x":866.666666666667,
                  "y":833.333333333333
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
+         "draworder":"topdown",
+         "id":35,
+         "name":"popup",
+         "objects":[
+                {
+                 "height":158.666666666667,
+                 "id":6,
+                 "name":"popup1",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":229.333333333333,
+                 "x":884,
+                 "y":412
                 }],
          "opacity":1,
          "type":"objectgroup",
