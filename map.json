@@ -272,6 +272,17 @@
                  "width":192,
                  "x":833.333333333333,
                  "y":205.333333333333
+                }, 
+                {
+                 "height":82.6666666666667,
+                 "id":13,
+                 "name":"intro",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":273.333333333333,
+                 "x":966.666666666667,
+                 "y":898.666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -280,7 +291,7 @@
          "y":0
         }],
  "nextlayerid":39,
- "nextobjectid":13,
+ "nextobjectid":15,
  "orientation":"orthogonal",
  "properties":[
         {
