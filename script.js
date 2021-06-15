@@ -20,3 +20,20 @@ WA.onEnterZone('myZone', () => {
 WA.onLeaveZone('myZone',() =>{
 	travaux.close();
 });
+
+let popintro= null;
+
+WA.onEnterZone('start', () => {
+    popintro = WA.openPopup("intro", 'Bienvenue au 17eme étage, pensez à autoriser les pop-ups depuis ce site et à activer le son afin de profiter de toutes les fonctionnalités.', [{
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    }]);
+});
+
+WA.onLeaveZone('start',() =>{
+	popintro.close();
+});
