@@ -1,7 +1,6 @@
-let popintro1= null;
 
 WA.onEnterZone('start', () => {
-    popintro1 = WA.openPopup("start1", 'Bienvenue sur Workaventure,pensez à autoriser les pop-ups depuis ce site et à activer le son afin de profiter de toutes les fonctionnalités.', [{
+    popintro1 = WA.openPopup("start 1", 'Bienvenue sur Workaventure,pensez à autoriser les pop-ups depuis ce site et à activer le son afin de profiter de toutes les fonctionnalités.', [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -16,7 +15,7 @@ WA.onLeaveZone('start',() =>{
 });
 
 WA.onEnterZone('entretour', () => {
-    pasc1 = WA.openPopup("pasc", 'C"est une heure pour arriver au bureau ça ?! Allez on se dépêche !!', [{
+    pasc1 = WA.openPopup("Pasc", 'C"est une heure pour arriver au bureau ça ?! Allez on se dépêche !!', [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
