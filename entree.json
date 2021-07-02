@@ -5,6 +5,11 @@
         {
          "height":32,
          "width":32
+        },
+"export":
+        {
+         "format":"json",
+         "target":"entree.json"
         }
     },
  "height":53,
