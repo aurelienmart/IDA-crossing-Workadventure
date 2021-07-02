@@ -1,5 +1,7 @@
+let popintro1= null;
+
 WA.onEnterZone('start', () => {
-    popintro = WA.openPopup("start1", 'Bienvenue sur Workaventure,pensez à autoriser les pop-ups depuis ce site et à activer le son afin de profiter de toutes les fonctionnalités.', [{
+    popintro1 = WA.openPopup("start1", 'Bienvenue sur Workaventure,pensez à autoriser les pop-ups depuis ce site et à activer le son afin de profiter de toutes les fonctionnalités.', [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -10,11 +12,11 @@ WA.onEnterZone('start', () => {
 });
 
 WA.onLeaveZone('start',() =>{
-	popintro.close();
+	popintro1.close();
 });
 
-WA.onEnterZone('escaliers', () => {
-    popintro = WA.openPopup("pasc", 'C"est une heure pour arriver au bureau ça ?! Allez on se dépêche !!', [{
+WA.onEnterZone('entretour', () => {
+    pasc1 = WA.openPopup("pasc", 'C"est une heure pour arriver au bureau ça ?! Allez on se dépêche !!', [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -24,12 +26,12 @@ WA.onEnterZone('escaliers', () => {
     }]);
 });
 
-WA.onLeaveZone('escaliers',() =>{
-	popintro.close();
+WA.onLeaveZone('entretour',() =>{
+	pasc1.close();
 });
 
 WA.onEnterZone('miparcours', () => {
-    popintro = WA.openPopup("start2", 'Si tu es nouveau ici n"hésite pas à aller voir Pascal pour plus d"informations', [{
+    popintro2 = WA.openPopup("start2", 'Si tu es nouveau ici n"hésite pas à aller voir Pascal pour plus d"informations', [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -40,5 +42,5 @@ WA.onEnterZone('miparcours', () => {
 });
 
 WA.onLeaveZone('miparcours',() =>{
-	popintro.close();
+	popintro2.close();
 });
