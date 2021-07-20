@@ -22,7 +22,15 @@ WA.onEnterZone('entretour', () => {
             // Close the popup when the "Close" button is pressed.
             popup.close();
         }
-    }]);
+    },
+    {
+        label:"non",
+        className:"primary",
+        callback: (popup)=>{
+            console.log('ça marche')
+        }
+    }
+]);
 });
 
 WA.onLeaveZone('entretour',() =>{
