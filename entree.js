@@ -22,15 +22,7 @@ WA.onEnterZone('entretour', () => {
             // Close the popup when the "Close" button is pressed.
             popup.close();
         }
-    },
-    {
-        label:"non",
-        className:"primary",
-        callback: (popup)=>{
-            console.log('ça marche')
-        }
-    }
-]);
+    }]);
 });
 
 WA.onLeaveZone('entretour',() =>{
@@ -50,4 +42,34 @@ WA.onEnterZone('miparcours', () => {
 
 WA.onLeaveZone('miparcours',() =>{
 	popintro2.close();
+});
+
+////tutoriel devant pascal
+WA.onEnterZone('tuto', () => {
+    pasc1 = WA.openPopup("Pasc", "Alors ?! C'est ta premère fois sur WorkAdventure ?", [{
+        label: "Oui",
+        className: "primary",
+        callback: (popup) => {
+            popup.close();
+            WA.openPopup("Pasc","Bienvenue à toi nouvel aventurier, tu dois avoir plein de questions",[{
+                label:"close",
+                className:"primary",
+                callback: (popup) => {
+                    popup.close()}
+            }])
+        }
+    },{label:"Non",
+        className:"primary",
+        callback: (popup)=>{
+            popup.close();
+            WA.openPopup("Pasc","Bienvenue à toi nouvel aventurier, tu dois avoir plein de questions",[{
+                label:"close",
+                className:"primary",
+                callback: (popup) => {
+                    popup.close()}
+            }])
+            
+        }
+
+    }]);
 });
