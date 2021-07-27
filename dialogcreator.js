@@ -1,7 +1,7 @@
 
 export function tuto(){
 ////tutoriel devant pascal
-WA.onEnterZone('tuto', () => {
+return (WA.onEnterZone('tuto', () => {
     WA.disablePlayerControls();
     pasc1 = WA.openPopup("Pasc", "Alors ?! C'est ta premère fois sur WorkAdventure ?", [{
         label: "Oui",
@@ -31,5 +31,5 @@ WA.onEnterZone('tuto', () => {
         }
 
     }]);
-});
+});)
 }
