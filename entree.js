@@ -45,4 +45,6 @@ WA.onLeaveZone('miparcours',() =>{
 	popintro2.close();
 });
 
-tuto();
+$.getScript('./dialogcreator.js', function(){
+ alert(La script a bien été chargé.);
+});
