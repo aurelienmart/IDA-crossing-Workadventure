@@ -1,5 +1,5 @@
 
-import tuto from './dialogcreator.js'
+import {tuto} from './dialogcreator.js'
 
 WA.onEnterZone('start', () => {
     popintro1 = WA.openPopup("start 1", 'Bienvenue sur Workaventure,pensez à autoriser les pop-ups depuis ce site et à activer le son afin de profiter de toutes les fonctionnalités.', [{
