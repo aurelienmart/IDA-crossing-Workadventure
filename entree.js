@@ -45,3 +45,4 @@ WA.onLeaveZone('miparcours',() =>{
 	popintro2.close();
 });
 
+tuto();
