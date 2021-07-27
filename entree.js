@@ -1,6 +1,3 @@
-
-<script type="module" src="entree.js"></script>;
-
 import { tuto } from "./dialogcreator.js";
 
 WA.onEnterZone('start', () => {
