@@ -1,4 +1,6 @@
 
+import tuto from './dialogcreator.js'
+
 WA.onEnterZone('start', () => {
     popintro1 = WA.openPopup("start 1", 'Bienvenue sur Workaventure,pensez à autoriser les pop-ups depuis ce site et à activer le son afin de profiter de toutes les fonctionnalités.', [{
         label: "Close",
@@ -44,35 +46,4 @@ WA.onLeaveZone('miparcours',() =>{
 	popintro2.close();
 });
 
-////tutoriel devant pascal
-WA.onEnterZone('tuto', () => {
-    WA.disablePlayerControls();
-    pasc1 = WA.openPopup("Pasc", "Alors ?! C'est ta premère fois sur WorkAdventure ?", [{
-        label: "Oui",
-        className: "primary",
-        callback: (popup) => {
-            popup.close();
-            WA.openPopup("Pasc","Bienvenue à toi nouvel aventurier, tu dois avoir plein de questions",[{
-                label:"close",
-                className:"primary",
-                callback: (popup) => {
-                    popup.close();
-                    WA.restorePlayerControls()}
-            }])
-        }
-    },{label:"Non",
-        className:"primary",
-        callback: (popup)=>{
-            popup.close();
-            WA.openPopup("Pasc","Tu connais le chemin alors, je te laisse repartir",[{
-                label:"close",
-                className:"primary",
-                callback: (popup) => {
-                    popup.close();
-                    WA.restorePlayerControls()}
-            }])
-            
-        }
-
-    }]);
-});
+tuto();
