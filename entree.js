@@ -1,5 +1,7 @@
 
-import {tuto} from './dialogcreator.js'
+<script type="module" src="entree.js"></script>;
+
+import { tuto } from "./dialogcreator.js";
 
 WA.onEnterZone('start', () => {
     popintro1 = WA.openPopup("start 1", 'Bienvenue sur Workaventure,pensez à autoriser les pop-ups depuis ce site et à activer le son afin de profiter de toutes les fonctionnalités.', [{
@@ -45,5 +47,9 @@ WA.onEnterZone('miparcours', () => {
 WA.onLeaveZone('miparcours',() =>{
 	popintro2.close();
 });
+
+
+
+//inserer dialogues
 
 tuto();
