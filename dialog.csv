@@ -1,6 +1,6 @@
-NodeID,Text,Buttons,Childs,,Target,Freeze,Zone
-0,ça va ?,"Oui,Non","1,2",,PopUp1,true,
-1,Super,Close,,,,,
-2,"Mince, il t'arrive quoi ?","Fatigué,Vivement les vacances","3,4",,,,
-3,Va faire une sieste,Close,,,,,
-4,T'as raison,Close,,,,,
+NodeID,Text,Buttons,Childs
+0,ï¿½a va ?,"Oui,Non","1,2"
+1,Super,Close,
+2,"Mince, il t'arrive quoi ?","Fatiguï¿½,Vivement les vacances","3,4"
+3,Va faire une sieste,Close,
+4,T'as raison,Close,
