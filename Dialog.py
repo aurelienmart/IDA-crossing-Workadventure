@@ -42,4 +42,11 @@ def create_dialog(excel,freeze,zone,target):
 
     return str
 
-print(create_dialog('dialog.csv',True,'tuto','Pasc'))
+def generateJS(excel,scriptname,freeze,zone,target):
+    old=scriptname.split('.')[0]+'old.'+scriptname.split('.')[1]
+    oldscript=open(old,"w")
+    oldscript.write(open(scriptname,"r").read())
+    script=open(scriptname,'a')
+    script.write(create_dialog(excel,freeze,zone,target))
+
+generateJS('dialog.csv','entree.js',True,'tuto','Pasc')
