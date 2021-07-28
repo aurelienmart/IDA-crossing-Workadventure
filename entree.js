@@ -43,4 +43,3 @@ WA.onEnterZone('miparcours', () => {
 WA.onLeaveZone('miparcours',() =>{
 	popintro2.close();
 });
-WA.onEnterZone('tuto',()=>{WA.disablePlayerControls();WA.openPopup('Pasc','�a va ?',[{label:'Oui',className:'primary',callback:(popup)=>{popup.close();WA.openPopup('Pasc','Super',[{label:'Close',className:'primary',callback:(popup)=>{popup.close();WA.restorePlayerControls()}}])}},{label:'Non',className:'primary',callback:(popup)=>{popup.close();WA.openPopup('Pasc','Mince, il tarrive quoi ?',[{label:'Fatigu�',className:'primary',callback:(popup)=>{popup.close();WA.openPopup('Pasc','Va faire une sieste',[{label:'Close',className:'primary',callback:(popup)=>{popup.close();WA.restorePlayerControls()}}])}},{label:'Vivement les vacances',className:'primary',callback:(popup)=>{popup.close();WA.openPopup('Pasc','Tas raison',[{label:'Close',className:'primary',callback:(popup)=>{popup.close();WA.restorePlayerControls()}}])}},])}},]);})
