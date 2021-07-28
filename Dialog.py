@@ -64,7 +64,7 @@ if action=='1':
     restore(scriptname)
 
 elif action =='2':
-     scriptname=input("Entrez le nom du script que vous souhaitez restaurer à une version antèrieure (avec l'extension)     ")
+     scriptname=input("A quel script souhaitez vous ajouter un dialogue ?    ")
      excel=input("Entrez le nom du fichier CSV contenant le dialogue(avec l'extension)      " )
      choixfreeze=input("Souhaitez-vous que le personnage soit figé le temps du dialogue ? oui/non     ")
      if choixfreeze=="oui":
