@@ -20,8 +20,7 @@ def to_dico(excel): #Prend le nom du fichier csv en entree et renvoie un diction
     return dico
 
 
-dico=to_dico("dialog.csv")
-def recursPopup(line,target):
+def recursPopup(dico,line,target):
     if len(line["buttons"])==1 and line["childs"][0]=="":
         return "WA.openPopup('"+target+"','"+line["text"]+"',[{label:'"+line["buttons"][0]+"',className:'primary',callback:(popup)=>{popup.close();WA.restorePlayerControls()}}])"
 
@@ -29,8 +28,18 @@ def recursPopup(line,target):
     else:
         str="WA.openPopup('"+target+"','"+line["text"]+"',["
         for i in range(len(line['buttons'])):
-            str+="{label:'"+line['buttons'][0]+"',className:'primary',callback:(popup)=>{popup.close();"+recursPopup(dico[line['childs'][i]],target)+"}},"
+            str+="{label:'"+line['buttons'][i]+"',className:'primary',callback:(popup)=>{popup.close();"+recursPopup(dico,dico[line['childs'][i]],target)+"}},"
         str+="])"
         return str
         
-print(recursPopup(dico['0'],'Pasc'))
+def create_dialog(excel,freeze,zone,target):
+    dico=to_dico(excel)
+    str= "WA.onEnterZone('"+zone+"',()=>{"
+    if freeze:
+        str+="WA.disablePlayerControls();"
+    str+=recursPopup(dico,dico['0'],target)
+    str+=";})"
+
+    return str
+
+print(create_dialog('dialog.csv',True,'tuto','Pasc'))
