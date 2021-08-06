@@ -321,7 +321,7 @@
         {
          "name":"script",
          "type":"string",
-         "value":"\/..\/scripts\/17.js"
+         "value":"../scripts/17.js"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.7.1",
