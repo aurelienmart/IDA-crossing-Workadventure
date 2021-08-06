@@ -35,7 +35,7 @@
                 {
                  "name":"playAudio",
                  "type":"string",
-                 "value":"elevator.mp3"
+                 "value":"..\/medias\/elevator.mp3"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -71,7 +71,7 @@
                 {
                  "name":"openWebsite",
                  "type":"string",
-                 "value":"cafe.html"
+                 "value":"..\/links\/cafe.html"
                 }, 
                 {
                  "name":"openWebsiteAllowAPI",
