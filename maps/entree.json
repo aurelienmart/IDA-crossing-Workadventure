@@ -122,7 +122,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"map.json"
+                 "value":"17.json"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -283,7 +283,7 @@
         {
          "name":"script",
          "type":"string",
-         "value":"entree.js"
+         "value":"..\/scripts\/entree.js"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.7.1",
