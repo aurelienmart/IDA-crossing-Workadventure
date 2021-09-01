@@ -62,6 +62,12 @@
          "id":7,
          "name":"escalier",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"exitUrl",
+                 "type":"string",
+                 "value":"elevator.json"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":100,
