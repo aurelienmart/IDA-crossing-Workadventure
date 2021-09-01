@@ -26,22 +26,6 @@
          "id":1,
          "name":"Elevator",
          "opacity":1,
-         "properties":[
-                {
-                 "name":"audioLoop",
-                 "type":"bool",
-                 "value":true
-                }, 
-                {
-                 "name":"audioVolume",
-                 "type":"float",
-                 "value":0.5
-                }, 
-                {
-                 "name":"playAudio",
-                 "type":"string",
-                 "value":"..\/medias\/elevator.mp3"
-                }],
          "type":"tilelayer",
          "visible":true,
          "width":10,
