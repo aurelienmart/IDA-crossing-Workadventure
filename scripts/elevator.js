@@ -1,4 +1,4 @@
-var = mySound = WA.sound.loadSound("../medias/elevator.mp3");
+mySound = WA.sound.loadSound("../medias/elevator.mp3");
 var config={
     volume : 0.5,
     loop: true,
