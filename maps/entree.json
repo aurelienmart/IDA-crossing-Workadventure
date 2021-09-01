@@ -238,13 +238,13 @@
          "name":"floorLayer",
          "objects":[
                 {
-                 "height":112,
+                 "height":129.832817337461,
                  "id":3,
                  "name":"Pasc",
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":296,
+                 "width":353.461300309598,
                  "x":1177.33333333333,
                  "y":5.3333333333333
                 }, 
