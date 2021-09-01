@@ -1,6 +1,7 @@
 NodeID,Text,Buttons,Childs
-0,�a va ?,"Oui,Non","1,2"
-1,Super,Close,
-2,"Mince, il tarrive quoi ?","Fatigu�, vivement les vacances","3,4"
-3,Va faire une sieste,Close,
-4,Tas raison,Close,
+0,Bonjour et bienvenue sur Workadventure !,"Où suis-je ?, Je connais !","1,2"
+1,Tu es dans une simulation des bureaux de Wavestone de Paris,Suite,3
+2,"Je te laisse alors, à bientôt !",Close,
+3,Tu peux discuter avec tes collègues grace à ton micro et ta caméra ou à  travers du chat !,Suite,4
+4,Accède à waveplace depuis les ordinateurs du 17ème étage ou bien rejoins tes amis à la machine à café !,Suite,5
+5,"Workadventure est encore en chantier, certains étages ne sont pas encore finis mais l’équipe IDA Crossing y travaille d’arrache-pied !",Close,
