@@ -1,4 +1,5 @@
 WA.onEnterZone('start', () => {
+    WA.disablePlayerControls();
     popintro2 = WA.openPopup("target", 'A quel étage veux-tu aller ?', [{
         label: "17eme",
         className: "primary",
