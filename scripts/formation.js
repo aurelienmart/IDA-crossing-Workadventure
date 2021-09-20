@@ -227,3 +227,75 @@ WA.room.onEnterZone('res3', () => {
 WA.onLeaveZone('res3',() =>{
 	res3.close();
 });
+
+////////////Semaine 4
+WA.room.onEnterZone('obj4', () => {
+    obj4 = WA.ui.openPopup("target4", "Les objectifs de la semaine 4 sont:\n /Comprendre le Wavestone Horizon\n /Poursuivre son apprentissage des fondamentaux de la gestion de son temps \n /Conclure le Mooc sur les bonnes pratiques du travail en équipe \n /Démarrer son initiation aux techniques commerciales", [{
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    }]);
+});
+WA.onLeaveZone('obj4',() =>{
+	obj4.close();
+});
+
+WA.room.onEnterZone('cal4', () => {
+    cal4 = WA.ui.openPopup("target4", "Les RDV de cette semaine sont: \n /Atelier Wavestone Horizon", [{
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    }]);
+});
+WA.onLeaveZone('cal4',() =>{
+	cal4.close();
+});
+
+WA.room.onEnterZone('res4', () => {
+    res4 = WA.ui.openPopup("target4", "Voici les différentes ressources de la semaine 4", [   {
+        label: "Mooc Gérez votre temps efficacement",
+        className: "primary",
+        callback: (popup) => {
+            WA.nav.openTab('https://openclassrooms.com/fr/courses/5944991-gerez-votre-temps-efficacement')
+        }
+    },
+    {
+        label: "Mooc Initiez-vous aux techniques commerciales",
+        className: "primary",
+        callback: (popup) => {
+            WA.nav.openTab('https://openclassrooms.com/fr/courses/4750821-initiez-vous-aux-techniques-commerciales')
+        }
+    },
+    {
+        label: "Découvrir le Wavestone Horizon",
+        className: "primary",
+        callback: (popup) => {
+            WA.nav.openTab("https://digiplace.sharepoint.com/sites/waveplace/fr-fr/HR/Pages/WH.aspx")
+        }
+    },
+    {
+        label: "Mooc Travailler efficacement en équipe",
+        className: "primary",
+        callback: (popup) => {
+            WA.nav.openTab('https://openclassrooms.com/fr/courses/5164316-travaillez-efficacement-en-equipe')
+        }
+    },
+    {
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    }
+]);
+});
+WA.onLeaveZone('res4',() =>{
+	res4.close();
+});
