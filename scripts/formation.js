@@ -28,3 +28,58 @@ WA.room.onEnterZone('cal1', () => {
 WA.onLeaveZone('cal1',() =>{
 	cal1.close();
 });
+
+WA.room.onEnterZone('res1', () => {
+    res1 = WA.ui.openPopup("target1", "Voici les différentes ressources de la semaine 1", [{
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    },
+    {
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    },
+    {
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    },
+    {
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    },
+    {
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    },
+    {
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    }
+]);
+});
+WA.onLeaveZone('res1',() =>{
+	res1.close();
+});
