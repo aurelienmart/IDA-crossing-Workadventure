@@ -25,12 +25,12 @@ WA.room.onEnterZone('cal1', () => {
         }
     }]);
 });
-WA.onLeaveZone('obj1',() =>{
+WA.onLeaveZone('cal1',() =>{
 	cal1.close();
 });
 
 WA.room.onEnterZone('res1', () => {
-    obj1 = WA.ui.openPopup("target1", "Voici les différentes ressources de la semaine 1", [{
+    res1 = WA.ui.openPopup("target1", "Voici les différentes ressources de la semaine 1", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -81,5 +81,5 @@ WA.room.onEnterZone('res1', () => {
 ]);
 });
 WA.onLeaveZone('res1',() =>{
-	obj1.close();
+	res1.close();
 });
