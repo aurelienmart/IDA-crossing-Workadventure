@@ -79,7 +79,7 @@ WA.onLeaveZone('res1',() =>{
 
 ////////////Semaine 2
 WA.room.onEnterZone('obj2', () => {
-    obj2 = WA.ui.openPopup("target2", "Les objectifs de la semaine 1 sont:\n /Découvrir la politique RH de Wavestone\n /Approfondir sa maîtrise des outils informatiques \n /Découvrir les offres du cabinet \n /Commencer à dévelloper ses connaissances sur le travail d'équipe", [{
+    obj2 = WA.ui.openPopup("target2", "Les objectifs de la semaine 2 sont:\n /Découvrir la politique RH de Wavestone\n /Approfondir sa maîtrise des outils informatiques \n /Découvrir les offres du cabinet \n /Commencer à dévelloper ses connaissances sur le travail d'équipe", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -154,4 +154,76 @@ WA.room.onEnterZone('res2', () => {
 });
 WA.onLeaveZone('res2',() =>{
 	res2.close();
+});
+
+////////////Semaine 3
+WA.room.onEnterZone('obj3', () => {
+    obj3 = WA.ui.openPopup("target3", "Les objectifs de la semaine 3 sont:\n /Découvrir le rôle du CSE et les avantages proposés\n /Réaliser un résumé de carrière au format Wavestone \n /Poursuivre l'apprentissage des bonnes pratiques du travail en équipe \n /Commencer à découvrir comment bien s'organiser", [{
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    }]);
+});
+WA.onLeaveZone('obj3',() =>{
+	obj3.close();
+});
+
+WA.room.onEnterZone('cal3', () => {
+    cal3 = WA.ui.openPopup("target3", "Les RDV de cette semaine sont: \n /Atelier résumé de carrière \n /Atelier bonnes pratiques du télétravail \n /Atelier découverte du CSE", [{
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    }]);
+});
+WA.onLeaveZone('cal3',() =>{
+	cal3.close();
+});
+
+WA.room.onEnterZone('res3', () => {
+    res3 = WA.ui.openPopup("target3", "Voici les différentes ressources de la semaine 3", [{
+        label: "Le CSE",
+        className: "primary",
+        callback: (popup) => {
+            WA.nav.openTab('https://digiplace.sharepoint.com/sites/waveplace/fr-fr/employee-representative-bodies/CSE/Pages/default.aspx')
+        }
+    },
+    {
+        label: "Mooc Gérez votre temps efficacement",
+        className: "primary",
+        callback: (popup) => {
+            WA.nav.openTab('https://openclassrooms.com/fr/courses/5944991-gerez-votre-temps-efficacement')
+        }
+    },
+    {
+        label: "La CVthèque de Wavestone pour s’inspirer",
+        className: "primary",
+        callback: (popup) => {
+            WA.nav.openTab("https://digiplace.sharepoint.com/sites/waveplace/RepositoryCV/Forms/AllItems.aspx")
+        }
+    },
+    {
+        label: "Mooc Travailler efficacement en équipe",
+        className: "primary",
+        callback: (popup) => {
+            WA.nav.openTab('https://openclassrooms.com/fr/courses/5164316-travaillez-efficacement-en-equipe')
+        }
+    },
+    {
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    }
+]);
+});
+WA.onLeaveZone('res3',() =>{
+	res3.close();
 });
