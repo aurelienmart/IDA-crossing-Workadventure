@@ -20,6 +20,12 @@
          "id":20,
          "name":"obj1",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"zone",
+                 "type":"string",
+                 "value":"obj1"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":180,
