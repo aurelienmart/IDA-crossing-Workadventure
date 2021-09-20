@@ -315,7 +315,7 @@
          "name":"ground",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":180,
          "x":0,
          "y":0
@@ -378,8 +378,8 @@
                  "rotation":0,
                  "type":"",
                  "visible":true,
-                 "width":462.666666666667,
-                 "x":1732,
+                 "width":553.333333333334,
+                 "x":1690.66666666667,
                  "y":129.333333333333
                 }, 
                 {
