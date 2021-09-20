@@ -31,43 +31,38 @@ WA.onLeaveZone('cal1',() =>{
 
 WA.room.onEnterZone('res1', () => {
     res1 = WA.ui.openPopup("target1", "Voici les différentes ressources de la semaine 1", [{
-        label: "Close",
+        label: "Mooc Télétravail, s’organiser à distance",
         className: "primary",
         callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
+            WA.nav.openTab('https://wavestone.edflex.com/fr/path/teletravail-sorganiser-a-distance')
         }
     },
     {
-        label: "Close",
+        label: "Delivering in Wavestone",
         className: "primary",
         callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
+            WA.nav.openTab('https://digiplace.sharepoint.com/:p:/r/sites/WOF-HR-FORMATIONDIW/Documents%20partages/Formation%20%C3%A0%20distance/Support%20de%20formation%20J1/Formation%20Delivering%20in%20Wavestone%20-%20premi%C3%A8re%20matin%C3%A9e.pptx?d=wea1ad2cfa50c4ae89a04b96a6eb26d20&csf=1&web=1&e=doaJfG')
         }
     },
     {
-        label: "Close",
+        label: "Présentation de Wavestone",
         className: "primary",
         callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
+            WA.nav.openTab("https://digiplace.sharepoint.com/sites/waveplace/fr-fr/corporate/Pages/Wavestone-presentation.aspx")
         }
     },
     {
-        label: "Close",
+        label: "Premiers pas sur Wavekeeper",
         className: "primary",
         callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
+            WA.nav.openTab('https://digiplace.sharepoint.com/sites/waveplace/fr-fr/it-services/Pages/Wavekeeper.aspx')
         }
     },
     {
-        label: "Close",
+        label: "Update de Pascal IMBERT",
         className: "primary",
         callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
+            WA.nav.openTab('https://digiplace.sharepoint.com/sites/waveplace/fr-fr/corporate/covid-19/Pages/weekly-update.aspx')
         }
     },
     {
