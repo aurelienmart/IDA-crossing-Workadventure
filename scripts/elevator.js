@@ -37,11 +37,11 @@ WA.onEnterZone('start', () => {
         }
     },
     {
-        label: "Ressources",
+        label: "Parcours NA",
         className: "primary",
         callback: (popup) => {
             mySound.stop();
-            WA.nav.goToRoom('../maps/ressources.json')
+            WA.nav.goToRoom('../maps/formation.json')
         }
     },
     {
