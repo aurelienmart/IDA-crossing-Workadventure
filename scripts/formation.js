@@ -107,7 +107,7 @@ WA.onLeaveZone('cal2',() =>{
 });
 
 WA.room.onEnterZone('res2', () => {
-    res2 = WA.ui.openPopup("target1", "Voici les différentes ressources de la semaine 2", [{
+    res2 = WA.ui.openPopup("target2", "Voici les différentes ressources de la semaine 2", [{
         label: "La politique RH de Wavestone",
         className: "primary",
         callback: (popup) => {
