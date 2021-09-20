@@ -299,3 +299,69 @@ WA.room.onEnterZone('res4', () => {
 WA.onLeaveZone('res4',() =>{
 	res4.close();
 });
+
+////////////Semaine 5
+WA.room.onEnterZone('obj5', () => {
+    obj5 = WA.ui.openPopup("target5", "Les objectifs de la semaine 4 sont:\n /Comprendre le modèle commercial de Wavestone\n /Poursuivre son initiation aux techniques commerciales \n /Comprendre les enjeux de la satisfaction client chez Wavestone", [{
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    }]);
+});
+WA.onLeaveZone('obj5',() =>{
+	obj5.close();
+});
+
+WA.room.onEnterZone('cal5', () => {
+    cal5 = WA.ui.openPopup("target5", "Les RDV de cette semaine sont: \n /Atelier sur le modèle commercial de Wavestone \n /Atelier bien s'organiser et travailler en équipe \n /Débrief de votre parcours d'intégration \n /Atelier Introduction à la RSE", [{
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    }]);
+});
+WA.onLeaveZone('cal5',() =>{
+	cal5.close();
+});
+
+WA.room.onEnterZone('res5', () => {
+    res5 = WA.ui.openPopup("target5", "Voici les différentes ressources de la semaine 5", [
+    {
+        label: "Mooc Initiez-vous aux techniques commerciales",
+        className: "primary",
+        callback: (popup) => {
+            WA.nav.openTab('https://openclassrooms.com/fr/courses/4750821-initiez-vous-aux-techniques-commerciales')
+        }
+    },
+    {
+        label: "Découvrir le modèle commercial de Wavestone",
+        className: "primary",
+        callback: (popup) => {
+            WA.nav.openTab("https://digiplace.sharepoint.com/sites/waveplace/fr-fr/business-marketing/Pages/Business-Model.aspx")
+        }
+    },
+    {
+        label: "Comprendre les enjeux de la satisfaction client",
+        className: "primary",
+        callback: (popup) => {
+            WA.nav.openTab('https://digiplace.sharepoint.com/sites/waveplace/fr-fr/corporate/pages/client-satisfaction-implementation.aspx')
+        }
+    },
+    {
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    }
+]);
+});
+WA.onLeaveZone('res5',() =>{
+	res5.close();
+});
