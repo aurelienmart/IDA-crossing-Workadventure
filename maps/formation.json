@@ -182,6 +182,12 @@
          "id":9,
          "name":"cal1",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"zone",
+                 "type":"string",
+                 "value":"cal1"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":180,
@@ -194,6 +200,12 @@
          "id":10,
          "name":"res1",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"zone",
+                 "type":"string",
+                 "value":"res1"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":180,
