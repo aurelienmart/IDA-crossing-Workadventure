@@ -1,6 +1,6 @@
 ////////////Semaine 1
 WA.room.onEnterZone('obj1', () => {
-    obj1 = WA.ui.openPopup("target1", "Les objectifs de la semaine 1 sont:\n /Découvrir le parcours d'intégration \n /Connaître les bonnes pratiques en télétravail \n /Se réapproprier les basiques", [{
+    obj1 = WA.ui.openPopup("target1", "Les objectifs de la semaine 1 sont:\n -Découvrir le parcours d'intégration \n -Connaître les bonnes pratiques en télétravail \n -Se réapproprier les basiques", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -79,7 +79,7 @@ WA.onLeaveZone('res1',() =>{
 
 ////////////Semaine 2
 WA.room.onEnterZone('obj2', () => {
-    obj2 = WA.ui.openPopup("target2", "Les objectifs de la semaine 2 sont:\n /Découvrir la politique RH de Wavestone\n /Approfondir sa maîtrise des outils informatiques \n /Découvrir les offres du cabinet \n /Commencer à dévelloper ses connaissances sur le travail d'équipe", [{
+    obj2 = WA.ui.openPopup("target2", "Les objectifs de la semaine 2 sont:\n -Découvrir la politique RH de Wavestone\n -Approfondir sa maîtrise des outils informatiques \n -Découvrir les offres du cabinet \n -Commencer à dévelloper ses connaissances sur le travail d'équipe", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -93,7 +93,7 @@ WA.onLeaveZone('obj2',() =>{
 });
 
 WA.room.onEnterZone('cal2', () => {
-    cal2 = WA.ui.openPopup("target2", "Les RDV de cette semaine sont: \n /Atelier politique RH \n /Atelier Positive Way", [{
+    cal2 = WA.ui.openPopup("target2", "Les RDV de cette semaine sont: \n -Atelier politique RH \n -Atelier Positive Way", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -158,7 +158,7 @@ WA.onLeaveZone('res2',() =>{
 
 ////////////Semaine 3
 WA.room.onEnterZone('obj3', () => {
-    obj3 = WA.ui.openPopup("target3", "Les objectifs de la semaine 3 sont:\n /Découvrir le rôle du CSE et les avantages proposés\n /Réaliser un résumé de carrière au format Wavestone \n /Poursuivre l'apprentissage des bonnes pratiques du travail en équipe \n /Commencer à découvrir comment bien s'organiser", [{
+    obj3 = WA.ui.openPopup("target3", "Les objectifs de la semaine 3 sont:\n -Découvrir le rôle du CSE et les avantages proposés\n -Réaliser un résumé de carrière au format Wavestone \n -Poursuivre l'apprentissage des bonnes pratiques du travail en équipe \n -Commencer à découvrir comment bien s'organiser", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -172,7 +172,7 @@ WA.onLeaveZone('obj3',() =>{
 });
 
 WA.room.onEnterZone('cal3', () => {
-    cal3 = WA.ui.openPopup("target3", "Les RDV de cette semaine sont: \n /Atelier résumé de carrière \n /Atelier bonnes pratiques du télétravail \n /Atelier découverte du CSE", [{
+    cal3 = WA.ui.openPopup("target3", "Les RDV de cette semaine sont: \n -Atelier résumé de carrière \n -Atelier bonnes pratiques du télétravail \n -Atelier découverte du CSE", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -230,7 +230,7 @@ WA.onLeaveZone('res3',() =>{
 
 ////////////Semaine 4
 WA.room.onEnterZone('obj4', () => {
-    obj4 = WA.ui.openPopup("target4", "Les objectifs de la semaine 4 sont:\n /Comprendre le Wavestone Horizon\n /Poursuivre son apprentissage des fondamentaux de la gestion de son temps \n /Conclure le Mooc sur les bonnes pratiques du travail en équipe \n /Démarrer son initiation aux techniques commerciales", [{
+    obj4 = WA.ui.openPopup("target4", "Les objectifs de la semaine 4 sont:\n -Comprendre le Wavestone Horizon\n -Poursuivre son apprentissage des fondamentaux de la gestion de son temps \n -Conclure le Mooc sur les bonnes pratiques du travail en équipe \n -Démarrer son initiation aux techniques commerciales", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -244,7 +244,7 @@ WA.onLeaveZone('obj4',() =>{
 });
 
 WA.room.onEnterZone('cal4', () => {
-    cal4 = WA.ui.openPopup("target4", "Les RDV de cette semaine sont: \n /Atelier Wavestone Horizon", [{
+    cal4 = WA.ui.openPopup("target4", "Les RDV de cette semaine sont: \n -Atelier Wavestone Horizon", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -302,7 +302,7 @@ WA.onLeaveZone('res4',() =>{
 
 ////////////Semaine 5
 WA.room.onEnterZone('obj5', () => {
-    obj5 = WA.ui.openPopup("target5", "Les objectifs de la semaine 4 sont:\n /Comprendre le modèle commercial de Wavestone\n /Poursuivre son initiation aux techniques commerciales \n /Comprendre les enjeux de la satisfaction client chez Wavestone", [{
+    obj5 = WA.ui.openPopup("target5", "Les objectifs de la semaine 4 sont:\n -Comprendre le modèle commercial de Wavestone\n -Poursuivre son initiation aux techniques commerciales \n -Comprendre les enjeux de la satisfaction client chez Wavestone", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -316,7 +316,7 @@ WA.onLeaveZone('obj5',() =>{
 });
 
 WA.room.onEnterZone('cal5', () => {
-    cal5 = WA.ui.openPopup("target5", "Les RDV de cette semaine sont: \n /Atelier sur le modèle commercial de Wavestone \n /Atelier bien s'organiser et travailler en équipe \n /Débrief de votre parcours d'intégration \n /Atelier Introduction à la RSE", [{
+    cal5 = WA.ui.openPopup("target5", "Les RDV de cette semaine sont: \n -Atelier sur le modèle commercial de Wavestone \n -Atelier bien s'organiser et travailler en équipe \n -Débrief de votre parcours d'intégration \n -Atelier Introduction à la RSE", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
