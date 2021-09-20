@@ -1,0 +1,7 @@
+NodeID,Text,Buttons,Childs
+0,Bonjour et bienvenue sur le parcours de fomation des nouveaux arrivants,"C’est quoi ?, Je connais !","1,2"
+1,Ici tu pourras retrouver toutes les informations necessaires à ta bonne intégration au cabinet.,Suite,3
+2,"Je te laisse alors, à bientôt !",Close,
+3,"Ce parcours se déroule en 5 semaines, ici représenté par 5 pièces.",Suite,4
+4,"Dans chaque pièce tu découvriras les objectifs de la semaine associé, pour visualiser tes RDV de chaque semaine, dirige toi vers le planning en haut à gauche de chaque pièce.",Suite,5
+5,Pour accéder aux ressources dirige toi vers les bibliothèques en haut à droite de chaque pièce. A bientot !,Close,
