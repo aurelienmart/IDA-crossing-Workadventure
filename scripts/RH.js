@@ -67,3 +67,25 @@ WA.room.onEnterZone('ARH', () => {
 WA.onLeaveZone('ARH',() =>{
 	ARH.close();
 });
+
+WA.room.onEnterZone('payroll', () => {
+    payroll = WA.ui.openPopup("target", "Si tu as des questions sur les sujets suivants:\n -Information sur les fiches de paie \n -Gestion des avances sur frais \n -Mise à jour des données personnelles \n -Suivi des arrêts maladie et gestion des dossiers Mutuelle et Prévoyance \n -Traitement des notes de frais non refacturables \n -Remboursement des abonnements de transports en commun \n -Suivi des absences (congés, CDT, sans solde) \n tu peux contacter la Mailing list IDA Payroll and staff administration", [{
+        label: "Envoyer un mail",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            WA.nav.openTab('mailto:DISPayrollandstaffadministration@wavestone.com')
+        }
+    },
+    {
+        label: "Close",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            popup.close();
+        }
+    }]);
+});
+WA.onLeaveZone('payroll',() =>{
+	payroll.close();
+});
