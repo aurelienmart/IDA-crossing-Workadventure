@@ -33,7 +33,7 @@ WA.onEnterZone('start', () => {
         className: "primary",
         callback: (popup) => {
             mySound.stop();
-            WA.nav.goToRoom('../maps/RH.json')
+            WA.nav.goToRoom('../maps/RH2.json')
         }
     },
     {
