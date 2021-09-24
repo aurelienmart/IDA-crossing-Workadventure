@@ -15,7 +15,7 @@ WA.onLeaveZone('start',() =>{
 });
 
 WA.onEnterZone('entretour', () => {
-    pasc1 = WA.openPopup("Pasc", 'C"est une heure pour arriver au bureau ça ?! Allez on se dépêche !!', [{
+    pasc1 = WA.openPopup("Pasc", "C'est une heure pour arriver au bureau ça ?! Allez on se dépêche !!", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -30,7 +30,7 @@ WA.onLeaveZone('entretour',() =>{
 });
 
 WA.onEnterZone('miparcours', () => {
-    popintro2 = WA.openPopup("start2", 'Si tu es nouveau ici n"hésite pas à aller voir Pascal pour plus d"informations', [{
+    popintro2 = WA.openPopup("start2", "Si tu es nouveau ici n'hésite pas à aller voir Pascal, au pied de la tour pour plus d'informations", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
