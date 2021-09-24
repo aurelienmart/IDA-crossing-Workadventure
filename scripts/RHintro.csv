@@ -1,0 +1,5 @@
+NodeID,Text,Buttons,Childs
+0,Bonjour et bienvenue au bureau RH d’IDA,"C’est quoi ?, Je connais !","1,2"
+1,"Je suis Océane DHOME, Je m’occupe des tâches suivantes: \n -Pilotage Rh de la practice en lien avec le Steering Commitee \n -Suivi et accompagnement des équipes et du management \n -Gestion des mobilités internes",Suite,3
+2,"Je te laisse alors, à bientôt !",Close,
+3,Pour rencontrer les Référentes RH tu peux aller au bench en haut à gauche. Si tu veux discuter avec les Assitantes RH tu les trouveras au bench en haut à droite. Et finalement si tu as des questions sur la gestion du personnel et des fiches de paie tu peux aller au dernier bench en bas à droite.,Close,
