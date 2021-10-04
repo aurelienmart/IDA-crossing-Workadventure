@@ -9,7 +9,7 @@ WA.room.onEnterZone('obj1', () => {
         }
     }]);
 });
-WA.onLeaveZone('obj1',() =>{
+WA.room.onLeaveZone('obj1',() =>{
 	obj1.close();
 });
 
@@ -23,7 +23,7 @@ WA.room.onEnterZone('cal1', () => {
         }
     }]);
 });
-WA.onLeaveZone('cal1',() =>{
+WA.room.onLeaveZone('cal1',() =>{
 	cal1.close();
 });
 
@@ -73,7 +73,7 @@ WA.room.onEnterZone('res1', () => {
     }
 ]);
 });
-WA.onLeaveZone('res1',() =>{
+WA.room.onLeaveZone('res1',() =>{
 	res1.close();
 });
 
@@ -88,7 +88,7 @@ WA.room.onEnterZone('obj2', () => {
         }
     }]);
 });
-WA.onLeaveZone('obj2',() =>{
+WA.room.onLeaveZone('obj2',() =>{
 	obj2.close();
 });
 
@@ -102,7 +102,7 @@ WA.room.onEnterZone('cal2', () => {
         }
     }]);
 });
-WA.onLeaveZone('cal2',() =>{
+WA.room.onLeaveZone('cal2',() =>{
 	cal2.close();
 });
 
@@ -152,7 +152,7 @@ WA.room.onEnterZone('res2', () => {
     }
 ]);
 });
-WA.onLeaveZone('res2',() =>{
+WA.room.onLeaveZone('res2',() =>{
 	res2.close();
 });
 
@@ -167,7 +167,7 @@ WA.room.onEnterZone('obj3', () => {
         }
     }]);
 });
-WA.onLeaveZone('obj3',() =>{
+WA.room.onLeaveZone('obj3',() =>{
 	obj3.close();
 });
 
@@ -181,7 +181,7 @@ WA.room.onEnterZone('cal3', () => {
         }
     }]);
 });
-WA.onLeaveZone('cal3',() =>{
+WA.room.onLeaveZone('cal3',() =>{
 	cal3.close();
 });
 
@@ -224,7 +224,7 @@ WA.room.onEnterZone('res3', () => {
     }
 ]);
 });
-WA.onLeaveZone('res3',() =>{
+WA.room.onLeaveZone('res3',() =>{
 	res3.close();
 });
 
@@ -239,7 +239,7 @@ WA.room.onEnterZone('obj4', () => {
         }
     }]);
 });
-WA.onLeaveZone('obj4',() =>{
+WA.room.onLeaveZone('obj4',() =>{
 	obj4.close();
 });
 
@@ -253,7 +253,7 @@ WA.room.onEnterZone('cal4', () => {
         }
     }]);
 });
-WA.onLeaveZone('cal4',() =>{
+WA.room.onLeaveZone('cal4',() =>{
 	cal4.close();
 });
 
@@ -296,7 +296,7 @@ WA.room.onEnterZone('res4', () => {
     }
 ]);
 });
-WA.onLeaveZone('res4',() =>{
+WA.room.onLeaveZone('res4',() =>{
 	res4.close();
 });
 
@@ -311,7 +311,7 @@ WA.room.onEnterZone('obj5', () => {
         }
     }]);
 });
-WA.onLeaveZone('obj5',() =>{
+WA.room.onLeaveZone('obj5',() =>{
 	obj5.close();
 });
 
@@ -325,7 +325,7 @@ WA.room.onEnterZone('cal5', () => {
         }
     }]);
 });
-WA.onLeaveZone('cal5',() =>{
+WA.room.onLeaveZone('cal5',() =>{
 	cal5.close();
 });
 
@@ -362,10 +362,10 @@ WA.room.onEnterZone('res5', () => {
     }
 ]);
 });
-WA.onLeaveZone('res5',() =>{
+WA.room.onLeaveZone('res5',() =>{
 	res5.close();
 });
 
 ///////////Autre
 
-WA.onEnterZone('start',()=>{WA.disablePlayerControls();WA.openPopup('targetStart','Bonjour et bienvenue sur le parcours de fomation des nouveaux arrivants',[{label:'C’est quoi ?',className:'primary',callback:(popup)=>{popup.close();WA.openPopup('targetStart','Ici tu pourras retrouver toutes les informations necessaires à ta bonne intégration au cabinet.',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.openPopup('targetStart','Ce parcours se déroule en 5 semaines, ici représenté par 5 pièces.',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.openPopup('targetStart','Dans chaque pièce tu découvriras les objectifs de la semaine associée. Pour visualiser tes RDV de chaque semaine, dirige toi vers le planning en haut à gauche de chaque pièce.',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.openPopup('targetStart','Pour accéder aux ressources dirige toi vers les bibliothèques en haut à droite de chaque pièce.\n A bientot !',[{label:'Close',className:'primary',callback:(popup)=>{popup.close();WA.restorePlayerControls()}}])}},])}},])}},])}},{label:' Je connais !',className:'primary',callback:(popup)=>{popup.close();WA.openPopup('targetStart','Je te laisse alors, à bientôt !',[{label:'Close',className:'primary',callback:(popup)=>{popup.close();WA.restorePlayerControls()}}])}},]);})
+WA.room.onEnterZone('start',()=>{WA.controls.disablePlayerControls();WA.ui.openPopup('targetStart','Bonjour et bienvenue sur le parcours de fomation des nouveaux arrivants',[{label:'C’est quoi ?',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Ici tu pourras retrouver toutes les informations necessaires à ta bonne intégration au cabinet.',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Ce parcours se déroule en 5 semaines, ici représenté par 5 pièces.',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Dans chaque pièce tu découvriras les objectifs de la semaine associée. Pour visualiser tes RDV de chaque semaine, dirige toi vers le planning en haut à gauche de chaque pièce.',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Pour accéder aux ressources dirige toi vers les bibliothèques en haut à droite de chaque pièce.\n A bientot !',[{label:'Close',className:'primary',callback:(popup)=>{popup.close();WA.controls.restorePlayerControls()}}])}},])}},])}},])}},{label:' Je connais !',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Je te laisse alors, à bientôt !',[{label:'Close',className:'primary',callback:(popup)=>{popup.close();WA.controls.restorePlayerControls()}}])}},]);})

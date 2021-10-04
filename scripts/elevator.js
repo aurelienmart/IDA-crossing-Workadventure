@@ -9,10 +9,10 @@ var config={
     mute : false
 }
 
-WA.onEnterZone('start', () => {
+WA.room.onEnterZone('start', () => {
     mySound.play(config)
-    WA.disablePlayerControls();
-    popintro2 = WA.openPopup("target", 'A quel étage veux-tu aller ?', [{
+    WA.controls.disablePlayerControls();
+    popintro2 = WA.ui.openPopup("target", 'A quel étage veux-tu aller ?', [{
         label: "17eme",
         className: "primary",
         callback: (popup) => {
