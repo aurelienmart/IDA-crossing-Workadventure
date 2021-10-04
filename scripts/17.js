@@ -53,3 +53,17 @@ WA.onEnterZone('waveplace', () => {
 WA.onLeaveZone('waveplace',()=>{
     waveplace.remove();
 })
+
+let cafe=null;
+WA.onEnterZone('cafe', () => {
+    waveplace=WA.ui.displayActionMessage({
+        message: "Appuyez sur Espace pour rejoindre un café virtuel",
+        callback: () => {
+            WA.nav.openTab("https://teams.microsoft.com/l/meetup-join/19:meeting_OGVjYTA1NjAtMGNkZS00NWVjLTk2YTAtZTg3N2QwZWMzNWZm@thread.v2/0?context=%7B%22Tid%22:%225de96c96-c87c-4dce-aad9-f5c557b52ac1%22,%22Oid%22:%2288d5518e-74f0-4910-8e9c-052164f7d7fd%22%7D")
+        }
+    })
+});
+
+WA.onLeaveZone('waveplace',()=>{
+    cafe.remove();
+})

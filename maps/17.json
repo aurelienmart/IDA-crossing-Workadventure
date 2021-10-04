@@ -87,24 +87,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"openWebsite",
+                 "name":"zone",
                  "type":"string",
-                 "value":"..\/links\/cafe.html"
-                }, 
-                {
-                 "name":"openWebsiteAllowAPI",
-                 "type":"bool",
-                 "value":true
-                }, 
-                {
-                 "name":"openWebsiteTrigger",
-                 "type":"string",
-                 "value":"onaction"
-                }, 
-                {
-                 "name":"openWebsiteTriggerMessage",
-                 "type":"string",
-                 "value":"Appuyez sur Espace pour rejoindre un caf\u00e9 virtuel"
+                 "value":"cafe"
                 }],
          "type":"tilelayer",
          "visible":true,
