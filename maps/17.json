@@ -138,24 +138,9 @@
          "opacity":1,
          "properties":[
                 {
-                 "name":"openWebsite",
+                 "name":"zone",
                  "type":"string",
-                 "value":"..\/links\/openwaveplace.html"
-                }, 
-                {
-                 "name":"openWebsiteAllowApi",
-                 "type":"bool",
-                 "value":true
-                }, 
-                {
-                 "name":"openWebsiteTrigger",
-                 "type":"string",
-                 "value":"onaction"
-                }, 
-                {
-                 "name":"openWebsiteTriggerMessage",
-                 "type":"string",
-                 "value":"Appuyez sur Espace pour acc\u00e9der \u00e0 Waveplace"
+                 "value":"waveplace"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -342,7 +327,7 @@
          "value":"..\/scripts\/17.js"
         }],
  "renderorder":"right-down",
- "tiledversion":"1.7.1",
+ "tiledversion":"1.7.2",
  "tileheight":32,
  "tilesets":[
         {
