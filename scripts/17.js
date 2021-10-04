@@ -40,7 +40,7 @@ WA.onLeaveZone('start',() =>{
 	popintro.close();
 });
 
-const waveplace;
+let waveplace=null;
 WA.onEnterZone('waveplace', () => {
     waveplace=WA.ui.displayActionMessage({
         message: "Appuyez sur Espace pour accéder à Waveplace",
