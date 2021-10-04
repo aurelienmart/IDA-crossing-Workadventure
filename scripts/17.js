@@ -39,3 +39,12 @@ WA.onEnterZone('start', () => {
 WA.onLeaveZone('start',() =>{
 	popintro.close();
 });
+
+WA.onEnterZone('waveplace', () => {
+    WA.ui.displayActionMessage({
+        message: "Appuyez sur Espace pour accéder à Waveplace",
+        callback: () => {
+            WA.nav.openTab("https://digiplace.sharepoint.com/sites/waveplace/fr-fr/Pages/default.aspx")
+        }
+    })
+});
