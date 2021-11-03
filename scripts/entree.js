@@ -15,7 +15,7 @@ WA.room.onLeaveZone('start',() =>{
 });
 
 WA.room.onEnterZone('entretour', () => {
-    pasc1 = WA.ui.openPopup("Pasc", "C'est une heure pour arriver au bureau ça ?! Allez on se dépêche !!", [{
+    pasc1 = WA.ui.openPopup("Pasc", "DAMNNNNNN la team Wavestone, Alors on en pense quoi de ce nouveau look ?!", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
