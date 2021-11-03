@@ -817,13 +817,36 @@
          "imageheight":51,
          "imagewidth":46,
          "margin":0,
-         "name":"Download93722",
+         "name":"PascalInshape",
          "spacing":0,
          "tilecount":1,
          "tileheight":51,
          "tiles":[
                 {
                  "id":0,
+                 "objectgroup":
+                    {
+                     "draworder":"index",
+                     "id":3,
+                     "name":"",
+                     "objects":[
+                            {
+                             "height":51,
+                             "id":2,
+                             "name":"",
+                             "rotation":0,
+                             "type":"",
+                             "visible":true,
+                             "width":30,
+                             "x":8,
+                             "y":0
+                            }],
+                     "opacity":1,
+                     "type":"objectgroup",
+                     "visible":true,
+                     "x":0,
+                     "y":0
+                    },
                  "properties":[
                         {
                          "name":"collides",
