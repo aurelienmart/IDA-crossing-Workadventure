@@ -30,6 +30,12 @@
          "id":7,
          "name":"start",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"zone",
+                 "type":"string",
+                 "value":"start"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":15,
