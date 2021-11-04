@@ -1,5 +1,6 @@
 
 WA.room.onEnterZone('start', () => {
+    WA.controls.disablePlayerControls();
     res1 = WA.ui.openPopup("popup", "Bienvenu dans le Carré des Cercles, quel cercle souhaites-tu consulter ?", [{
         label: "Mooc Télétravail, s’organiser à distance",
         className: "primary",
