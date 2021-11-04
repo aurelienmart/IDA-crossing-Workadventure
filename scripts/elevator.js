@@ -45,8 +45,16 @@ WA.room.onEnterZone('start', () => {
         }
     },
     {
-        label: "Dehors",
+        label: "Cercles",
         className: "primary",
+        callback: (popup) => {
+            mySound.stop();
+            WA.nav.goToRoom('../maps/cercles.json')
+        }
+    },
+    {
+        label: "Dehors",
+        className: "secondary",
         callback: (popup) => {
             mySound.stop();
             WA.nav.goToRoom('../maps/entree.json')
