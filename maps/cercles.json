@@ -27,7 +27,7 @@
          "name":"ground",
          "opacity":1,
          "type":"tilelayer",
-         "visible":true,
+         "visible":false,
          "width":15,
          "x":0,
          "y":0
@@ -69,8 +69,8 @@
                  "type":"",
                  "visible":true,
                  "width":409.333333333333,
-                 "x":26.6666666666667,
-                 "y":-50.6666666666666
+                 "x":29.3333333333333,
+                 "y":34.6666666666667
                 }],
          "opacity":1,
          "type":"objectgroup",
