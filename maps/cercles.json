@@ -85,7 +85,7 @@
         {
          "name":"script",
          "type":"string",
-         "value":"..\/scripts\/entree.js"
+         "value":"..\/scripts\/cercles.js"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.7.2",
