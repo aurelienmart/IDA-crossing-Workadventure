@@ -139,6 +139,12 @@
          "id":42,
          "name":"rick",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"zone",
+                 "type":"string",
+                 "value":"rick"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":70,
