@@ -2,38 +2,38 @@
 WA.room.onEnterZone('start', () => {
     WA.controls.disablePlayerControls();
     res1 = WA.ui.openPopup("popup", "Bienvenu dans le Carré des Cercles, quel cercle souhaites-tu consulter ?", [{
-        label: "Mooc Télétravail, s’organiser à distance",
+        label: "NEXT GEN IT",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab('https://wavestone.edflex.com/fr/path/teletravail-sorganiser-a-distance')
+            WA.nav.openTab('https://digiplace.sharepoint.com/sites/WOPIDA-BUSINESS/SitePages/Next-Gen-IT.aspx')
         }
     },
     {
-        label: "Delivering in Wavestone",
+        label: "M&A",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab('https://digiplace.sharepoint.com/:p:/r/sites/WOF-HR-FORMATIONDIW/Documents%20partages/Formation%20%C3%A0%20distance/Support%20de%20formation%20J1/Formation%20Delivering%20in%20Wavestone%20-%20premi%C3%A8re%20matin%C3%A9e.pptx?d=wea1ad2cfa50c4ae89a04b96a6eb26d20&csf=1&web=1&e=doaJfG')
+            WA.nav.openTab('https://digiplace.sharepoint.com/sites/WOPIDA-BUSINESS/SitePages/M%26A-and-Large-Infrastructure-Project.aspx')
         }
     },
     {
-        label: "Présentation de Wavestone",
+        label: "APM",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab("https://digiplace.sharepoint.com/sites/waveplace/fr-fr/corporate/Pages/Wavestone-presentation.aspx")
+            WA.nav.openTab("https://digiplace.sharepoint.com/sites/WOPIDA-BUSINESS/SitePages/Amazing-Platform-Makers--.aspx?from=SendByEmail&e=QrhIcr8h50G6x8cZql-qhw&at=9")
         }
     },
     {
-        label: "Premiers pas sur Wavekeeper",
+        label: "DBT",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab('https://digiplace.sharepoint.com/sites/waveplace/fr-fr/it-services/Pages/Wavekeeper.aspx')
+            WA.nav.openTab('https://digiplace.sharepoint.com/sites/WOPIDA-BUSINESS/SitePages/Digital-Business-Transformation.aspx')
         }
     },
     {
-        label: "Update de Pascal IMBERT",
+        label: "CORE AI",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab('https://digiplace.sharepoint.com/sites/waveplace/fr-fr/corporate/covid-19/Pages/weekly-update.aspx')
+            WA.nav.openTab('https://digiplace.sharepoint.com/sites/WOPIDA-BUSINESS/SitePages/Core-AI.aspx')
         }
     },
     {
