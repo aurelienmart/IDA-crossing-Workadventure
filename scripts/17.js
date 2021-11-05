@@ -64,7 +64,7 @@ WA.room.onEnterZone('rick', () => {
     })
 });
 
-WA.room.onLeaveZone('waveplace',()=>{
+WA.room.onLeaveZone('rick',()=>{
     waveplace.remove();
 })
 
