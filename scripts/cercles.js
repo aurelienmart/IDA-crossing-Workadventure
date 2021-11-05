@@ -1,7 +1,7 @@
 
 WA.room.onEnterZone('start', () => {
     WA.controls.disablePlayerControls();
-    res1 = WA.ui.openPopup("popup", "Bienvenu dans le Carré des Cercles, quel cercle souhaites-tu consulter ?", [{
+    res1 = WA.ui.openPopup("popup", "Bienvenue dans le Carré des Cercles, quel cercle souhaites-tu consulter ?", [{
         label: "NEXT GEN IT",
         className: "primary",
         callback: (popup) => {
