@@ -54,6 +54,20 @@ WA.room.onLeaveZone('waveplace',()=>{
     waveplace.remove();
 })
 
+let rick=null;
+WA.room.onEnterZone('rick', () => {
+    waveplace=WA.ui.displayActionMessage({
+        message: "Appuyez sur Espace pour accéder à Waveplace",
+        callback: () => {
+            WA.nav.openTab("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+        }
+    })
+});
+
+WA.room.onLeaveZone('waveplace',()=>{
+    waveplace.remove();
+})
+
 let cafe=null;
 WA.room.onEnterZone('cafe', () => {
     cafe=WA.ui.displayActionMessage({
