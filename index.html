@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+        <style>
+            .useful-width{
+                /* center the html elements */
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+        <script>
+            window.onload = function() {
+                const host = window.location.host;
+                let path = window.location.pathname;
+                if (path.endsWith('index.html')) {
+                    path = path.substr(path, path.length - 'index.html'.length);
+                }
+                const instanceId = Math.random().toString(36).substring(2, 15);
+                const url = `https://play.workadventu.re/_/${instanceId}/${host}${path}/maps/entree.json`;
+                document.getElementById('mapLink2').href = url;
+
+                const mapUrl = window.location.protocol+'//'+window.location.host+path+'/maps/entree.json';
+                document.getElementById('mapUrl').innerText = mapUrl;
+
+                const gettingStartedLink = 'https://workadventu.re/getting-started?name=Map&mapUrl='+mapUrl;
+                document.getElementById('gettingStartedLink').href = gettingStartedLink;
+
+            };
+        </script>
+    </head>
+    <body>
+        <h1 style="text-align: center; margin-top: 3rem">IDA Crossing</h1>
+        <h2 style="text-align: center; margin-top: 3rem">WorkAdventure development interface</h2>
+        <div class="useful-width">
+            <div class="nes-container with-title is-centered" style="margin-top: 1rem">
+                <p class="title">Test this map</p>
+                <p><a id="mapLink2" href="" class="nes-btn is-primary">Test this map</a></p>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
