@@ -19060,14 +19060,14 @@
          "columns":1,
          "firstgid":5287,
          "image":"tilesets\/AD - Copy.png",
-         "imageheight":42,
-         "imagewidth":24,
+         "imageheight":48,
+         "imagewidth":26,
          "margin":0,
          "name":"AD - Copy",
          "spacing":0,
          "tilecount":1,
-         "tileheight":42,
-         "tilewidth":24
+         "tileheight":48,
+         "tilewidth":26
         }],
  "tilewidth":32,
  "type":"map",
