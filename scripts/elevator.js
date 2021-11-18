@@ -13,19 +13,11 @@ WA.room.onEnterZone('start', () => {
     mySound.play(config)
     WA.controls.disablePlayerControls();
     popintro2 = WA.ui.openPopup("target", 'A quel étage veux-tu aller ?', [{
-        label: "17eme",
+        label: "16eme",
         className: "primary",
         callback: (popup) => {
             mySound.stop();
             WA.nav.goToRoom('../maps/17.json')
-        }
-    },
-    {
-        label: "21eme",
-        className: "primary",
-        callback: (popup) => {
-            mySound.stop();
-            WA.nav.goToRoom('../maps/21.json')
         }
     },
     {
