@@ -26,7 +26,7 @@ WA.room.onLeaveZone('myZone',() =>{
 let popintro= null;
 
 WA.room.onEnterZone('start', () => {
-    popintro = WA.ui.openPopup("intro", 'Bienvenue au 17eme étage, pensez à autoriser les pop-ups depuis ce site et à activer le son afin de profiter de toutes les fonctionnalités.', [{
+    popintro = WA.ui.openPopup("intro", 'Bienvenue au 16eme étage, pensez à autoriser les pop-ups depuis ce site et à activer le son afin de profiter de toutes les fonctionnalités.', [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
