@@ -15,7 +15,7 @@ WA.room.onLeaveZone('start',() =>{
 });
 
 WA.room.onEnterZone('entretour', () => {
-    pasc1 = WA.ui.openPopup("Pasc", "DAMNNNNNN la team Wavestone, Alors on en pense quoi de ce nouveau look ?!", [{
+    pasc1 = WA.ui.openPopup("Pasc", "Bienvenue à la journée porte ouverte WorkAdventure à l'occasion du Tower Day ! Bonne exploration, nous attendons vos retours !", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
