@@ -93,3 +93,13 @@ WA.room.onEnterZone('zonememe',()=>{
         WA.room.onLeaveZone('zonememe',() =>{
             meme.close();
         });
+
+let form=null;
+    WA.room.onEnterZone('form', () => {
+        form=WA.ui.displayActionMessage({
+            message: "Appuyez sur Espace pour remplir le questionnaire WorkAdventure",
+            callback: () => {
+                WA.nav.openTab("https://forms.office.com/Pages/ResponsePage.aspx?id=lmzpXXzIzk2q2fXFV7UqwY5R1YjwdBBJjpwFIWT31_1UMk41SjIzVDRHWkRCOTI3UUhLUTVPSE9UTy4u")
+            }
+        })
+    });
