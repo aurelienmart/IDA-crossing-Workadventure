@@ -104,6 +104,10 @@ let form=null;
         })
     });
 
+    WA.room.onLeaveZone('form',() =>{
+        form.close();
+    });
+
     let GT=null;
     WA.room.onEnterZone('GT', () => {
         GT=WA.ui.displayActionMessage({
