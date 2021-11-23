@@ -105,7 +105,7 @@ let form=null;
     });
 
     WA.room.onLeaveZone('form',() =>{
-        form.close();
+        form.remove();
     });
 
     let GT=null;
