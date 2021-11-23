@@ -109,7 +109,7 @@ let form=null;
         GT=WA.ui.displayActionMessage({
             message: "Appuyez sur Espace pour accéder à Waveplace",
             callback: () => {
-                WA.nav.openTab("../medias/GT.png")
+                WA.nav.openCoWebSite('../medias/GT.png');
             }
         })
     });
