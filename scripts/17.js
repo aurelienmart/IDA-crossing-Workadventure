@@ -56,7 +56,7 @@ WA.room.onLeaveZone('waveplace',()=>{
 
 let rick=null;
 WA.room.onEnterZone('rick', () => {
-    waveplace=WA.ui.displayActionMessage({
+    rick=WA.ui.displayActionMessage({
         message: "Appuyez sur Espace pour accéder à Waveplace",
         callback: () => {
             WA.nav.openTab("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
@@ -65,7 +65,7 @@ WA.room.onEnterZone('rick', () => {
 });
 
 WA.room.onLeaveZone('rick',()=>{
-    waveplace.remove();
+    rick.remove();
 })
 
 let cafe=null;
@@ -103,3 +103,17 @@ let form=null;
             }
         })
     });
+
+    let GT=null;
+    WA.room.onEnterZone('GT', () => {
+        GT=WA.ui.displayActionMessage({
+            message: "Appuyez sur Espace pour accéder à Waveplace",
+            callback: () => {
+                WA.nav.openTab("../medias/GT.png")
+            }
+        })
+    });
+    
+    WA.room.onLeaveZone('GT',()=>{
+        GT.remove();
+    })
