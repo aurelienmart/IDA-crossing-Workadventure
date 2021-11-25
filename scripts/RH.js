@@ -2,11 +2,11 @@ WA.room.onEnterZone('start',()=>{WA.controls.disablePlayerControls();WA.ui.openP
 
 WA.room.onEnterZone('RRH', () => {
     RRH = WA.ui.openPopup("target", "Bonjour nous sommes les référentes RH,\n nous sommes en charge des éléments suivants: \n \n -Suivi et accompagnement des collaborateurs sur les sujets d'évolution, parcours, mobilité interne... \n-Appui au management de la practice sur les sujets RH \n -Animation des processus et politiques RH sur le périmètre \n - Intégration des nouveaux collaborateurs \n -Suivi des periodes d'éssai, stages et alternances \n -Animation et com' interne", [{
-        label: "Contacter Myriam",
+        label: "Contacter Anne-Lise",
         className: "primary",
         callback: (popup) => {
             // Close the popup when the "Close" button is pressed.
-            WA.nav.openTab('mailto:myriam.le-masson@wavestone.com')
+            WA.nav.openTab('mailto:anne-lise.arcuset@wavestone.com')
         }
     },
     {
@@ -15,6 +15,14 @@ WA.room.onEnterZone('RRH', () => {
         callback: (popup) => {
             // Close the popup when the "Close" button is pressed.
             WA.nav.openTab('mailto:elise.amadei@wavestone.com')
+        }
+    },
+    {
+        label: "Contacter Inès",
+        className: "primary",
+        callback: (popup) => {
+            // Close the popup when the "Close" button is pressed.
+            WA.nav.openTab('mailto:ines.lecendreux@wavestone.com')
         }
     },
     {
@@ -48,7 +56,7 @@ WA.room.onEnterZone('ARH', () => {
         }
     },
     {
-        label: "Contacter Elise",
+        label: "Contacter Sophie",
         className: "primary",
         callback: (popup) => {
             // Close the popup when the "Close" button is pressed.
