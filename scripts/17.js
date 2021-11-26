@@ -107,17 +107,3 @@ let form=null;
     WA.room.onLeaveZone('form',() =>{
         form.remove();
     });
-
-    let GT=null;
-    WA.room.onEnterZone('GT', () => {
-        GT=WA.ui.displayActionMessage({
-            message: "Appuyez sur Espace pour accéder à Waveplace",
-            callback: () => {
-                WA.nav.openCoWebSite('../medias/GT.png');
-            }
-        })
-    });
-    
-    WA.room.onLeaveZone('GT',()=>{
-        GT.remove();
-    })
