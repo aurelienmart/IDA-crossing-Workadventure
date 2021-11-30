@@ -9,9 +9,9 @@ module.exports = {
     devServer: {
         static: ['.'],
         hot:true,
-        //host: '0.0.0.0',
-        host: 'localhost',
-        //sockPort: 80,
+        host: '0.0.0.0',
+        //host: 'localhost',
+        port: 80,
         allowedHosts: "all",
         headers: {
             "Access-Control-Allow-Origin": "*",
