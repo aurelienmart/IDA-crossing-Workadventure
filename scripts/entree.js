@@ -1,5 +1,6 @@
 
 WA.room.onEnterZone('start', () => {
+    mySound.play(config)
     popintro1 = WA.ui.openPopup("start 1", 'Bienvenue sur Workaventure,pensez à autoriser les pop-ups depuis ce site et à activer le son afin de profiter de toutes les fonctionnalités.', [{
         label: "Close",
         className: "primary",
@@ -15,7 +16,7 @@ WA.room.onLeaveZone('start',() =>{
 });
 
 WA.room.onEnterZone('entretour', () => {
-    pasc1 = WA.ui.openPopup("Pasc", "Bienvenue à la journée porte ouverte WorkAdventure à l'occasion du Tower Day ! Bonne exploration, nous attendons vos retours !", [{
+    pasc1 = WA.ui.openPopup("Pasc", "AU SECOURS, STOP !!! JE N'EN PEUX PLUS DE CETTE MUSIQUE !\n ET APPORTEZ-MOI UNE VESTE, J'AI FROID!!", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -44,3 +45,17 @@ WA.room.onLeaveZone('miparcours',() =>{
 	popintro2.close();
 });
 WA.room.onEnterZone('tuto',()=>{WA.controls.disablePlayerControls();WA.ui.openPopup('Pasc','Bonjour et bienvenue sur Workadventure !',[{label:'Où suis-je ?',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('Pasc','Tu es dans une simulation des bureaux de Wavestone de Paris',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('Pasc','Tu peux discuter avec tes collègues grace à ton micro et ta caméra ou à  travers du chat !',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('Pasc','Accède à waveplace depuis les ordinateurs du 16ème étage ou bien rejoins tes amis à la machine à café !',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('Pasc','Workadventure est encore en chantier, certains étages ne sont pas encore finis mais l’équipe IDA Crossing y travaille d’arrache-pied !',[{label:'Close',className:'primary',callback:(popup)=>{popup.close();WA.controls.restorePlayerControls()}}])}},])}},])}},])}},{label:' Je connais !',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('Pasc','Je te laisse alors, à bientôt !',[{label:'Close',className:'primary',callback:(popup)=>{popup.close();WA.controls.restorePlayerControls()}}])}},]);})
+
+mySound = WA.sound.loadSound("../medias/christmas.mp3");
+var config={
+    volume : 0.5,
+    loop: true,
+    rate : 1,
+    detune: 1,
+    delay : 0,
+    seek: 0,
+    mute : false
+}
+WA.room.onEnterZone('elevator',()=>{
+    mySound.stop()
+})
