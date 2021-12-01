@@ -26,5 +26,5 @@ jobs:
 
     - name: Docker pour azure
       run: |
-        docker build . -t idacrossingtest.azurecr.io/test:1 .
+        docker build . -t idacrossingtest.azurecr.io/test:1
         docker push idacrossingtest.azurecr.io/test:1
