@@ -1,7 +1,7 @@
 
 WA.room.onEnterZone('start', () => {
     mySound.play(config)
-    popintro1 = WA.ui.openPopup("start 1", 'Bienvenue sur Workaventure,pensez à autoriser les pop-ups depuis ce site et à activer le son afin de profiter de toutes les fonctionnalités.', [{
+    popintro1 = WA.ui.openPopup("start 1", 'AAAAAAAAAAAAAAAAAAAAAAAAA site et à activer le son afin de profiter de toutes les fonctionnalités.', [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
