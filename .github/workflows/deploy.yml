@@ -26,5 +26,5 @@ jobs:
 
     - name: Docker pour azure
       run: |
-        docker build -f Dockerfile -t idacrossingtest.azurecr.io/WA .
-        docker push idacrossingtest.azurecr.io/WA
+        docker build -f Dockerfile -t idacrossingtest.azurecr.io/ .
+        docker push idacrossingtest.azurecr.io/
