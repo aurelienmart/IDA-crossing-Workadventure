@@ -20,7 +20,9 @@ jobs:
     - name: Login Azure Registry
       uses: azure/docker-login@v1
       with: 
-        login-server: idacrossingtest.azurecr.io
+        login-server: 'idacrossingtest.azurecr.io'
+        username: 'IDACrossingtest'
+        password: ${{ secrets.PASSWORDAZURE }}
 
     - name: Docker pour azure
       run: |
