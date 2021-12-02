@@ -17,7 +17,7 @@
                 if (path.endsWith('index.html')) {
                     path = path.substr(path, path.length - 'index.html'.length);
                 }
-                const instanceId = Math.random().toString(36).substring(2, 15);
+                const instanceId = 'IDACrossing'
                 const url = `https://play.workadventu.re/_/${instanceId}/${host}${path}/maps/entree.json`;
                 document.getElementById('mapLink2').href = url;
 
