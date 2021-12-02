@@ -17,9 +17,12 @@
                 if (path.endsWith('index.html')) {
                     path = path.substr(path, path.length - 'index.html'.length);
                 }
-                const instanceId = 'IDACrossing'
+                const instanceId = 'IDA'
                 const url = `https://play.workadventu.re/_/${instanceId}/${host}${path}/maps/entree.json`;
-                document.getElementById('mapLink2').href = url;
+                document.getElementById('IDA').href = url;
+
+                const url2 = `https://play.workadventu.re/_/NA/${host}${path}/maps/entree.json`;
+                document.getElementById('NA').href = url2;
 
                 const mapUrl = window.location.protocol+'//'+window.location.host+path+'/maps/entree.json';
                 document.getElementById('mapUrl').innerText = mapUrl;
@@ -28,15 +31,26 @@
                 document.getElementById('gettingStartedLink').href = gettingStartedLink;
 
             };
+            validate =function(){
+                const host = window.location.host;
+                let path = window.location.pathname;
+                const namesess=document.getElementById('name').value;
+                const url3 = `https://play.workadventu.re/_/${namesess}/${host}${path}/maps/entree.json`;
+                window.open(url3)
+            }
         </script>
     </head>
     <body>
         <h1 style="text-align: center; margin-top: 3rem">IDA Crossing</h1>
-        <h2 style="text-align: center; margin-top: 3rem">WorkAdventure development interface</h2>
+        <h2 style="text-align: center; margin-top: 3rem">Bienvenue sur WorkAdventure</h2>
         <div class="useful-width">
             <div class="nes-container with-title is-centered" style="margin-top: 1rem">
-                <p class="title">Test this map</p>
-                <p><a id="mapLink2" href="" class="nes-btn is-primary">Test this map</a></p>
+                <p class="title">Sessions disponibles:</p>
+                <p><a id="IDA" href="" class="nes-btn is-primary">IDA</a></p>
+                <p><a id="NA" href="" class="nes-btn is-primary">Nouveaux arrivants</a></p>
+                <p>Session privée:</p>
+                <p><input type="text" id="name" name="name" required
+                    minlength="4" maxlength="8" size="10"><a id="private" onClick=validate() class="nes-btn is-primary">créer/rejoindre</a></p>
             </div>
             </div>
         </div>
