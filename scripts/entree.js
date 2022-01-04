@@ -16,7 +16,7 @@ WA.room.onLeaveZone('start',() =>{
 
 let pasc1=null
 WA.room.onEnterZone('entretour', () => {
-    pasc1 = WA.ui.openPopup("Pasc", "Bienvenue à la journée porte ouverte WorkAdventure à l'occasion du Tower Day ! Bonne exploration, nous attendons vos retours !", [{
+    pasc1 = WA.ui.openPopup("Pasc", "Bienvenue sur WorkAdventure ! Bonne exploration!", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
