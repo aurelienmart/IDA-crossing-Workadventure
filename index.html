@@ -31,12 +31,18 @@
                 document.getElementById('gettingStartedLink').href = gettingStartedLink;
 
             };
+
+
             validate =function(){
+                const invocation = new XMLHttpRequest();
                 const host = window.location.host;
                 let path = window.location.pathname;
                 const namesess=document.getElementById('name').value;
                 const url3 = `https://play.workadventu.re/_/${namesess}/${host}${path}/maps/entree.json`;
-                window.open(url3)
+                invocation.open('GET', url3, true);
+                invocation.withCredentials = true;
+                invocation.setRequestHeader('Access-Control-Allow-Origin', path);
+                invocation.send();
             }
         </script>
     </head>
