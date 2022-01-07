@@ -14,7 +14,7 @@ module.exports = {
         port: 80,
         allowedHosts: "all",
         headers: {
-            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Origin": "https://workadventurewavestone.azurewebsites.net",
             "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
             "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
         }
