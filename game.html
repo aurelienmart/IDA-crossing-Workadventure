@@ -1,18 +1,11 @@
 <html>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script>
-    redirect = function() {
-        console.log('test')
-        $.ajax({
-    type: 'get',
-    url: 'https://play.workadventu.re/_/NA/workadventurewavestone.azurewebsites.net/maps/entree.json',
-    xhrFields: {
-        withCredentials: true
-    }})}
-    </script>
-<button onclick=redirect()>test</button>
+
+<iframe src="https://play.workadventu.re/_/IDA/workadventurewavestone.azurewebsites.net//maps/entree.json"></iframe>
 </html>
 
 <style>
-
+    iframe{
+        width: 100vw;
+        height: 100vh;
+    }
 </style>
