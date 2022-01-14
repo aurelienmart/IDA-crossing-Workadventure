@@ -9,14 +9,15 @@ module.exports = {
     devServer: {
         static: ['.'],
         hot:true,
-        //host: '0.0.0.0',
-        host: 'localhost',
-        //sockPort: 80,
+        host: '0.0.0.0',
+        //host: 'localhost',
+        port: 80,
         allowedHosts: "all",
         headers: {
             "Access-Control-Allow-Origin": "*",
             "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
-            "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
+            "Access-Control-Allow-Headers": "*",
+            "Access-Control-Allow-Credentials": "true"
         }
     },
     module: {

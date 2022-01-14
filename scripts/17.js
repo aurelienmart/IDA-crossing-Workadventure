@@ -82,17 +82,25 @@ WA.room.onLeaveZone('cafe',()=>{
     cafe.remove();
 })
 
+let memeA;
 let meme;
-WA.room.onEnterZone('zonememe',()=>{
-    meme=WA.ui.openPopup('targetmeme','A.D: Hey!.. Psssssssst!... Tu veux voir ma collection de memes ?!',
-    [{label:'Oui avec plaisir',className:'primary',callback:(popup)=>
-    {popup.close();WA.nav.openTab("https://teams.microsoft.com/l/channel/19%3ac8e919ce875d4c12a0d8e4fc617ada51%40thread.tacv2/Feel%2520good%2520-%2520coffee?groupId=2bac874a-c4bd-407e-ab0a-e77b00e9f609&tenantId=5de96c96-c87c-4dce-aad9-f5c557b52ac1")}},
-    {label:" Non j'ai du boulot" ,className:'primary',callback:(popup)=>{
-        popup.close();}}]);})
+WA.room.onEnterZone('zonememe', () => {
+    memeA=WA.ui.displayActionMessage({
+        message: "Interagir",
+        callback: () => {
+            meme=WA.ui.openPopup('targetmeme','A.D: Hey!.. Psssssssst!... Tu veux voir ma collection de memes ?!',
+            [{label:'Oui avec plaisir',className:'primary',callback:(popup)=>
+            {popup.close();WA.nav.openTab("https://teams.microsoft.com/l/channel/19%3ac8e919ce875d4c12a0d8e4fc617ada51%40thread.tacv2/Feel%2520good%2520-%2520coffee?groupId=2bac874a-c4bd-407e-ab0a-e77b00e9f609&tenantId=5de96c96-c87c-4dce-aad9-f5c557b52ac1")}},
+            {label:" Non j'ai du boulot" ,className:'primary',callback:(popup)=>{
+                popup.close();}}])
+        }
+    })
+});
 
-        WA.room.onLeaveZone('zonememe',() =>{
-            meme.close();
-        });
+WA.room.onLeaveZone('zonememe',() =>{
+    memeA.remove();
+    meme.close()
+    });
 
 let form=null;
     WA.room.onEnterZone('form', () => {

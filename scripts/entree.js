@@ -1,6 +1,6 @@
-
+let popintro1=null;
 WA.room.onEnterZone('start', () => {
-    popintro1 = WA.ui.openPopup("start 1", 'Bienvenue sur Workaventure,pensez à autoriser les pop-ups depuis ce site et à activer le son afin de profiter de toutes les fonctionnalités.', [{
+    popintro1 = WA.ui.openPopup("start 1", 'Bienvenue sur WorkAventure !', [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -14,8 +14,9 @@ WA.room.onLeaveZone('start',() =>{
 	popintro1.close();
 });
 
+let pasc1=null
 WA.room.onEnterZone('entretour', () => {
-    pasc1 = WA.ui.openPopup("Pasc", "Bienvenue à la journée porte ouverte WorkAdventure à l'occasion du Tower Day ! Bonne exploration, nous attendons vos retours !", [{
+    pasc1 = WA.ui.openPopup("Pasc", "Bienvenue sur WorkAdventure ! Bonne exploration!", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -29,6 +30,7 @@ WA.room.onLeaveZone('entretour',() =>{
 	pasc1.close();
 });
 
+let popintro2=null;
 WA.room.onEnterZone('miparcours', () => {
     popintro2 = WA.ui.openPopup("start2", "Si tu es nouveau ici n'hésite pas à aller voir Pascal, au pied de la tour pour plus d'informations", [{
         label: "Close",
