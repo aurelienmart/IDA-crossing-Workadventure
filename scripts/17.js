@@ -82,8 +82,8 @@ WA.room.onLeaveZone('cafe',()=>{
     cafe.remove();
 })
 
-let memeA;
-let meme;
+let memeA=null;
+let meme=null;
 WA.room.onEnterZone('zonememe', () => {
     memeA=WA.ui.displayActionMessage({
         message: "Interagir",
@@ -99,7 +99,9 @@ WA.room.onEnterZone('zonememe', () => {
 
 WA.room.onLeaveZone('zonememe',() =>{
     memeA.remove();
-    meme.close()
+    if (meme!=null){
+        meme.close()
+    }
     });
 
 let form=null;
@@ -115,3 +117,63 @@ let form=null;
     WA.room.onLeaveZone('form',() =>{
         form.remove();
     });
+
+    let mounirA=null;
+    let mounir=null;
+    WA.room.onEnterZone('MounirJ', () => {
+        mounirA=WA.ui.displayActionMessage({
+            message: "Parler à Mounir",
+            callback: () => {
+                mounir=WA.ui.openPopup('MounirJ',"J'écris pour NextGen, je répands le DevOps, je coache en Blockchain, et je double commit.",
+                [{label:'Close',className:'primary',callback:(popup)=>
+                {popup.close();}}])}
+        })
+    });
+    
+    WA.room.onLeaveZone('MounirJ',() =>{
+        mounirA.remove();
+        if(mounir!=null){
+        mounir.close()}
+        });
+
+
+
+let oliviaA=null;
+let olivia=null;
+WA.room.onEnterZone('OliviaD', () => {
+    oliviaA=WA.ui.displayActionMessage({
+        message: "Parler à Olivia",
+        callback: () => {
+            olivia=WA.ui.openPopup('OliviaD',"Jeune CDI, référente cooptation et ambassadrice des COWS, je suis toujours partante pour participer à des activités internes avec la famille IDA",
+            [{label:'Close',className:'primary',callback:(popup)=>
+            {popup.close();}}])}
+    })
+});
+
+WA.room.onLeaveZone('OliviaD',() =>{
+    oliviaA.remove();
+    if(olivia!=null){
+    olivia.close()}
+    });
+
+let maximeA=null;
+let maxime=null;
+WA.room.onEnterZone('MaximeB', () => {
+    maximeA=WA.ui.displayActionMessage({
+        message: "Parler à Maxime",
+        callback: () => {
+            maxime=WA.ui.openPopup('MaximeB',"Ci-gît le tout premier régisseur IDA Live, fuyez si vous le pouvez encore !",
+            [{label:'Close',className:'primary',callback:(popup)=>
+            {popup.close();}}])}
+    })
+});
+WA.room.onLeaveZone('MaximeB',() =>{
+    maximeA.remove();
+    if(maxime!=null){
+        maxime.close()
+    }
+    
+    });
+
+
+

@@ -1,6 +1,7 @@
 ////////////Semaine 1
+let obj1=null;
 WA.room.onEnterZone('obj1', () => {
-    obj1 = WA.ui.openPopup("target1", "Les objectifs de la semaine 1 sont:\n -Découvrir le parcours d'intégration \n -Connaître les bonnes pratiques en télétravail \n -Se réapproprier les basiques", [{
+    obj1 = WA.ui.openPopup("target1", "Les objectifs de la semaine 1 sont:\n -Découvrir Wavestone, la periode d'intégration et la politique du cabinet \n -Réaliser un résumé de carrière au format Wavestone \n -Découvrir les outils Wavestone et la charte graphique du cabinet", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -13,8 +14,9 @@ WA.room.onLeaveZone('obj1',() =>{
 	obj1.close();
 });
 
+let cal1=null;
 WA.room.onEnterZone('cal1', () => {
-    cal1 = WA.ui.openPopup("target1", "Il n'y a pas de RDV cette semaine", [{
+    cal1 = WA.ui.openPopup("target1", "-Formation Delivering in Wavestone \n -Atelier résumé de carrière \n -Atelier Wavekeeper", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -27,26 +29,21 @@ WA.room.onLeaveZone('cal1',() =>{
 	cal1.close();
 });
 
+let res1=null;
 WA.room.onEnterZone('res1', () => {
-    res1 = WA.ui.openPopup("target1", "Voici les différentes ressources de la semaine 1", [{
-        label: "Mooc Télétravail, s’organiser à distance",
+    res1 = WA.ui.openPopup("target1", "Voici les différentes ressources de la semaine 1", [
+        {
+        label: "La CVthèque de Wavestone pour s'inspirer",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab('https://wavestone.edflex.com/fr/path/teletravail-sorganiser-a-distance')
+            WA.nav.openTab("https://digiplace.sharepoint.com/sites/waveplace/RepositoryCV/Forms/AllItems.aspx")
         }
     },
     {
         label: "Delivering in Wavestone",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab('https://digiplace.sharepoint.com/:p:/r/sites/WOF-HR-FORMATIONDIW/Documents%20partages/Formation%20%C3%A0%20distance/Support%20de%20formation%20J1/Formation%20Delivering%20in%20Wavestone%20-%20premi%C3%A8re%20matin%C3%A9e.pptx?d=wea1ad2cfa50c4ae89a04b96a6eb26d20&csf=1&web=1&e=doaJfG')
-        }
-    },
-    {
-        label: "Présentation de Wavestone",
-        className: "primary",
-        callback: (popup) => {
-            WA.nav.openTab("https://digiplace.sharepoint.com/sites/waveplace/fr-fr/corporate/Pages/Wavestone-presentation.aspx")
+            WA.nav.openTab('https://digiplace.sharepoint.com/sites/WOF-HR-FORMATIONDIW/Documents%20partages/Forms/AllItems.aspx')
         }
     },
     {
@@ -57,10 +54,10 @@ WA.room.onEnterZone('res1', () => {
         }
     },
     {
-        label: "Update de Pascal IMBERT",
+        label: "La politique RH de Wavestone",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab('https://digiplace.sharepoint.com/sites/waveplace/fr-fr/corporate/covid-19/Pages/weekly-update.aspx')
+            WA.nav.openTab('https://digiplace.sharepoint.com/sites/waveplace/fr-fr/hr/Pages/career.aspx')
         }
     },
     {
@@ -78,8 +75,9 @@ WA.room.onLeaveZone('res1',() =>{
 });
 
 ////////////Semaine 2
+let obj2=null
 WA.room.onEnterZone('obj2', () => {
-    obj2 = WA.ui.openPopup("target2", "Les objectifs de la semaine 2 sont:\n -Découvrir la politique RH de Wavestone\n -Approfondir sa maîtrise des outils informatiques \n -Découvrir les offres du cabinet \n -Commencer à dévellopper ses connaissances sur le travail d'équipe", [{
+    obj2 = WA.ui.openPopup("target2", "Les objectifs de la semaine 2 sont:\n -Découvrir les bonnes pratiques du télétravail \n -Approfondir sa maîtrise des outils informatiques \n -Commencer à dévellopper ses connaissances sur le travail d'équipe", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -92,8 +90,9 @@ WA.room.onLeaveZone('obj2',() =>{
 	obj2.close();
 });
 
+let cal2=null
 WA.room.onEnterZone('cal2', () => {
-    cal2 = WA.ui.openPopup("target2", "Les RDV de cette semaine sont: \n -Atelier politique RH \n -Atelier Positive Way", [{
+    cal2 = WA.ui.openPopup("target2", "Les RDV de cette semaine sont: \n -Débrief sur les bonnes pratiques du télétravail \n -Débrief sur la gestion du temps et le travail en équipe", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -106,19 +105,27 @@ WA.room.onLeaveZone('cal2',() =>{
 	cal2.close();
 });
 
+let res2=null
 WA.room.onEnterZone('res2', () => {
-    res2 = WA.ui.openPopup("target2", "Voici les différentes ressources de la semaine 2", [{
-        label: "La politique RH de Wavestone",
+    res2 = WA.ui.openPopup("target2", "Voici les différentes ressources de la semaine 2", [    {
+        label: "Mooc Gérez votre temps efficacement",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab('https://digiplace.sharepoint.com/sites/waveplace/fr-fr/hr/Pages/career.aspx')
+            WA.nav.openTab('https://openclassrooms.com/fr/courses/5944991-gerez-votre-temps-efficacement')
         }
     },
     {
-        label: "Le Positive Way",
+        label: "Mooc Travailler efficacement en équipe",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab('https://digiplace.sharepoint.com/sites/waveplace/fr-fr/corporate/Pages/the-positive-way.aspx')
+            WA.nav.openTab('https://openclassrooms.com/fr/courses/5164316-travaillez-efficacement-en-equipe')
+        }
+    },
+    {
+        label: "Mooc Télétravail",
+        className: "primary",
+        callback: (popup) => {
+            WA.nav.openTab('https://wavestone.edflex.com/fr/mooc/mini-mooc-sur-le-teletravail/')
         }
     },
     {
@@ -129,10 +136,10 @@ WA.room.onEnterZone('res2', () => {
         }
     },
     {
-        label: "Mooc Travailler efficacement en équipe",
+        label: "Formation Social Media Wavestone: How to place your Pawns",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab('https://openclassrooms.com/fr/courses/5164316-travaillez-efficacement-en-equipe')
+            WA.nav.openTab('https://sequoia.wavestone-app.com/course/social-media-how-to-place-your-pawns/')
         }
     },
     {
@@ -157,8 +164,9 @@ WA.room.onLeaveZone('res2',() =>{
 });
 
 ////////////Semaine 3
+let obj3=null
 WA.room.onEnterZone('obj3', () => {
-    obj3 = WA.ui.openPopup("target3", "Les objectifs de la semaine 3 sont:\n -Découvrir le rôle du CSE et les avantages proposés\n -Réaliser un résumé de carrière au format Wavestone \n -Poursuivre l'apprentissage des bonnes pratiques du travail en équipe \n -Commencer à découvrir comment bien s'organiser", [{
+    obj3 = WA.ui.openPopup("target3", "Les objectifs de la semaine 3 sont:\n -Découvrir le Wavestone Horizon \n -Conclure le Mooc sur les bonnes pratiques du travail en équipe \n -Découverte du processus de staffing et du plan de charge \n -Renforcer l'intégration au sein du cabinet", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -170,9 +178,9 @@ WA.room.onEnterZone('obj3', () => {
 WA.room.onLeaveZone('obj3',() =>{
 	obj3.close();
 });
-
+let cal3=null
 WA.room.onEnterZone('cal3', () => {
-    cal3 = WA.ui.openPopup("target3", "Les RDV de cette semaine sont: \n -Atelier résumé de carrière \n -Atelier bonnes pratiques du télétravail \n -Atelier découverte du CSE", [{
+    cal3 = WA.ui.openPopup("target3", "Les RDV de cette semaine sont: \n -Atelier Wavestone Horizon \n -Atelier Plan de Charge et Staffing", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -185,35 +193,46 @@ WA.room.onLeaveZone('cal3',() =>{
 	cal3.close();
 });
 
+let res3=null
 WA.room.onEnterZone('res3', () => {
-    res3 = WA.ui.openPopup("target3", "Voici les différentes ressources de la semaine 3", [{
-        label: "Le CSE",
-        className: "primary",
-        callback: (popup) => {
-            WA.nav.openTab('https://digiplace.sharepoint.com/sites/waveplace/fr-fr/employee-representative-bodies/CSE/Pages/default.aspx')
-        }
-    },
-    {
-        label: "Mooc Gérez votre temps efficacement",
-        className: "primary",
-        callback: (popup) => {
-            WA.nav.openTab('https://openclassrooms.com/fr/courses/5944991-gerez-votre-temps-efficacement')
-        }
-    },
-    {
-        label: "La CVthèque de Wavestone pour s’inspirer",
-        className: "primary",
-        callback: (popup) => {
-            WA.nav.openTab("https://digiplace.sharepoint.com/sites/waveplace/RepositoryCV/Forms/AllItems.aspx")
-        }
-    },
-    {
-        label: "Mooc Travailler efficacement en équipe",
-        className: "primary",
-        callback: (popup) => {
-            WA.nav.openTab('https://openclassrooms.com/fr/courses/5164316-travaillez-efficacement-en-equipe')
-        }
-    },
+    res3 = WA.ui.openPopup("target3", "Voici les différentes ressources de la semaine 3", [
+        {
+            label: "Découvrir le Wavestone Horizon",
+            className: "primary",
+            callback: (popup) => {
+                WA.nav.openTab("https://digiplace.sharepoint.com/sites/waveplace/fr-fr/HR/Pages/WH.aspx")
+            }
+        },
+        {
+            label: "Comprendre les enjeux de la satisfaction client",
+            className: "primary",
+            callback: (popup) => {
+                WA.nav.openTab('https://digiplace.sharepoint.com/sites/waveplace/fr-fr/corporate/pages/client-satisfaction-implementation.aspx')
+            }
+        },
+        {
+            label: "Mooc Gérez votre temps efficacement",
+            className: "primary",
+            callback: (popup) => {
+                WA.nav.openTab('https://openclassrooms.com/fr/courses/5944991-gerez-votre-temps-efficacement')
+            }
+        },
+        {
+            label: "Mooc Travailler efficacement en équipe",
+            className: "primary",
+            callback: (popup) => {
+                WA.nav.openTab('https://openclassrooms.com/fr/courses/5164316-travaillez-efficacement-en-equipe')
+            }
+        },
+        {
+            label: "Mooc Télétravail",
+            className: "primary",
+            callback: (popup) => {
+                WA.nav.openTab('https://wavestone.edflex.com/fr/mooc/mini-mooc-sur-le-teletravail/')
+            }
+        },
+
+
     {
         label: "Close",
         className: "primary",
@@ -229,8 +248,9 @@ WA.room.onLeaveZone('res3',() =>{
 });
 
 ////////////Semaine 4
+let obj4=null
 WA.room.onEnterZone('obj4', () => {
-    obj4 = WA.ui.openPopup("target4", "Les objectifs de la semaine 4 sont:\n -Comprendre le Wavestone Horizon\n -Poursuivre son apprentissage des fondamentaux de la gestion de son temps \n -Conclure le Mooc sur les bonnes pratiques du travail en équipe \n -Démarrer son initiation aux techniques commerciales", [{
+    obj4 = WA.ui.openPopup("target4", "Les objectifs de la semaine 4 sont:\n -Découvrir le CSE\n -Démarrer son initiation aux techniques commerciales et à l’offre cabinet \n -Se sensibiliser à l'engagement RSE", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -242,9 +262,9 @@ WA.room.onEnterZone('obj4', () => {
 WA.room.onLeaveZone('obj4',() =>{
 	obj4.close();
 });
-
+let cal4=null
 WA.room.onEnterZone('cal4', () => {
-    cal4 = WA.ui.openPopup("target4", "Les RDV de cette semaine sont: \n -Atelier Wavestone Horizon", [{
+    cal4 = WA.ui.openPopup("target4", "Les RDV de cette semaine sont: \n -Découvrir le CSE Wavestone \n -Atelier sur l'introduction à la politique RSE du cabinet \n -Atelier sur le modèle commercial Wavestone \n -Débrief de votre parcours d'intégration", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -257,14 +277,9 @@ WA.room.onLeaveZone('cal4',() =>{
 	cal4.close();
 });
 
+let res4=null
 WA.room.onEnterZone('res4', () => {
-    res4 = WA.ui.openPopup("target4", "Voici les différentes ressources de la semaine 4", [   {
-        label: "Mooc Gérez votre temps efficacement",
-        className: "primary",
-        callback: (popup) => {
-            WA.nav.openTab('https://openclassrooms.com/fr/courses/5944991-gerez-votre-temps-efficacement')
-        }
-    },
+    res4 = WA.ui.openPopup("target4", "Voici les différentes ressources de la semaine 4", [
     {
         label: "Mooc Initiez-vous aux techniques commerciales",
         className: "primary",
@@ -273,17 +288,10 @@ WA.room.onEnterZone('res4', () => {
         }
     },
     {
-        label: "Découvrir le Wavestone Horizon",
+        label: "Découvrir le modèle commercial de Wavestone",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab("https://digiplace.sharepoint.com/sites/waveplace/fr-fr/HR/Pages/WH.aspx")
-        }
-    },
-    {
-        label: "Mooc Travailler efficacement en équipe",
-        className: "primary",
-        callback: (popup) => {
-            WA.nav.openTab('https://openclassrooms.com/fr/courses/5164316-travaillez-efficacement-en-equipe')
+            WA.nav.openTab("https://digiplace.sharepoint.com/sites/waveplace/fr-fr/business-marketing/Pages/Business-Model.aspx")
         }
     },
     {
@@ -300,72 +308,6 @@ WA.room.onLeaveZone('res4',() =>{
 	res4.close();
 });
 
-////////////Semaine 5
-WA.room.onEnterZone('obj5', () => {
-    obj5 = WA.ui.openPopup("target5", "Les objectifs de la semaine 4 sont:\n -Comprendre le modèle commercial de Wavestone\n -Poursuivre son initiation aux techniques commerciales \n -Comprendre les enjeux de la satisfaction client chez Wavestone", [{
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
-        }
-    }]);
-});
-WA.room.onLeaveZone('obj5',() =>{
-	obj5.close();
-});
-
-WA.room.onEnterZone('cal5', () => {
-    cal5 = WA.ui.openPopup("target5", "Les RDV de cette semaine sont: \n -Atelier sur le modèle commercial de Wavestone \n -Atelier bien s'organiser et travailler en équipe \n -Débrief de votre parcours d'intégration \n -Atelier Introduction à la RSE", [{
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
-        }
-    }]);
-});
-WA.room.onLeaveZone('cal5',() =>{
-	cal5.close();
-});
-
-WA.room.onEnterZone('res5', () => {
-    res5 = WA.ui.openPopup("target5", "Voici les différentes ressources de la semaine 5", [
-    {
-        label: "Mooc Initiez-vous aux techniques commerciales",
-        className: "primary",
-        callback: (popup) => {
-            WA.nav.openTab('https://openclassrooms.com/fr/courses/4750821-initiez-vous-aux-techniques-commerciales')
-        }
-    },
-    {
-        label: "Découvrir le modèle commercial de Wavestone",
-        className: "primary",
-        callback: (popup) => {
-            WA.nav.openTab("https://digiplace.sharepoint.com/sites/waveplace/fr-fr/business-marketing/Pages/Business-Model.aspx")
-        }
-    },
-    {
-        label: "Comprendre les enjeux de la satisfaction client",
-        className: "primary",
-        callback: (popup) => {
-            WA.nav.openTab('https://digiplace.sharepoint.com/sites/waveplace/fr-fr/corporate/pages/client-satisfaction-implementation.aspx')
-        }
-    },
-    {
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
-        }
-    }
-]);
-});
-WA.room.onLeaveZone('res5',() =>{
-	res5.close();
-});
-
 ///////////Autre
 
-WA.room.onEnterZone('start',()=>{WA.controls.disablePlayerControls();WA.ui.openPopup('targetStart','Bonjour et bienvenue sur le parcours de fomation des nouveaux arrivants',[{label:'C’est quoi ?',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Ici tu pourras retrouver toutes les informations nécessaires à ta bonne intégration au cabinet.',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Ce parcours se déroule en 5 semaines, ici représenté par 5 pièces.',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Dans chaque pièce tu découvriras les objectifs de la semaine associée. Pour visualiser tes RDV de chaque semaine, dirige toi vers le planning en haut à gauche de chaque pièce.',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Pour accéder aux ressources dirige toi vers les bibliothèques en haut à droite de chaque pièce.\n A bientot !',[{label:'Close',className:'primary',callback:(popup)=>{popup.close();WA.controls.restorePlayerControls()}}])}},])}},])}},])}},{label:' Je connais !',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Je te laisse alors, à bientôt !',[{label:'Close',className:'primary',callback:(popup)=>{popup.close();WA.controls.restorePlayerControls()}}])}},]);})
+WA.room.onEnterZone('start',()=>{WA.controls.disablePlayerControls();WA.ui.openPopup('targetStart','Bonjour et bienvenue sur le parcours de fomation des nouveaux arrivants',[{label:'C’est quoi ?',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Ici tu pourras retrouver toutes les informations nécessaires à ta bonne intégration au cabinet.',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Ce parcours se déroule en 4 semaines, ici représenté par 4 pièces.',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Dans chaque pièce tu découvriras les objectifs de la semaine associée. Pour visualiser tes RDV de chaque semaine, dirige toi vers le planning en haut à gauche de chaque pièce.',[{label:'Suite',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Pour accéder aux ressources dirige toi vers les bibliothèques en haut à droite de chaque pièce.\n A bientot !',[{label:'Close',className:'primary',callback:(popup)=>{popup.close();WA.controls.restorePlayerControls()}}])}},])}},])}},])}},{label:' Je connais !',className:'primary',callback:(popup)=>{popup.close();WA.ui.openPopup('targetStart','Je te laisse alors, à bientôt !',[{label:'Close',className:'primary',callback:(popup)=>{popup.close();WA.controls.restorePlayerControls()}}])}},]);})
