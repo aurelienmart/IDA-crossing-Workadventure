@@ -7,7 +7,7 @@ WA.room.onEnterZone('RRH', () => {
         className: "primary",
         callback: (popup) => {
             // Close the popup when the "Close" button is pressed.
-            WA.nav.openTab('mailto:anne-lise.arcuset@wavestone.com')
+            WA.nav.openTab('https://eur.delve.office.com/?u=c81fd1cd-8f4b-40c7-b3d9-de9b54621c0c&v=work')
         }
     },
     {
@@ -15,7 +15,7 @@ WA.room.onEnterZone('RRH', () => {
         className: "primary",
         callback: (popup) => {
             // Close the popup when the "Close" button is pressed.
-            WA.nav.openTab('mailto:elise.amadei@wavestone.com')
+            WA.nav.openTab('https://eur.delve.office.com/?u=6e68d253-2a12-4391-9d62-e880fb735ce8&v=work')
         }
     },
     {
@@ -23,7 +23,7 @@ WA.room.onEnterZone('RRH', () => {
         className: "primary",
         callback: (popup) => {
             // Close the popup when the "Close" button is pressed.
-            WA.nav.openTab('mailto:ines.lecendreux@wavestone.com')
+            WA.nav.openTab('https://eur.delve.office.com/?u=fa95e3a4-6a39-42c7-8f6b-19cccaca5b14&v=work')
         }
     },
     {
@@ -46,7 +46,7 @@ WA.room.onEnterZone('ARH', () => {
         className: "primary",
         callback: (popup) => {
             // Close the popup when the "Close" button is pressed.
-            WA.nav.openTab('mailto:lucie.brule@wavestone.com')
+            WA.nav.openTab('https://eur.delve.office.com/?u=41f7782b-e033-4644-b3a2-9b639aed93ed&v=work')
         }
     },
     {
@@ -54,7 +54,7 @@ WA.room.onEnterZone('ARH', () => {
         className: "primary",
         callback: (popup) => {
             // Close the popup when the "Close" button is pressed.
-            WA.nav.openTab('mailto:charlene.gracia@wavestone.com')
+            WA.nav.openTab('https://eur.delve.office.com/?u=11fc10eb-cb0d-427b-b2d0-550e1dab8318&v=work')
         }
     },
     {
@@ -62,7 +62,7 @@ WA.room.onEnterZone('ARH', () => {
         className: "primary",
         callback: (popup) => {
             // Close the popup when the "Close" button is pressed.
-            WA.nav.openTab('mailto:sophie.lerbier@wavestone.com')
+            WA.nav.openTab('https://eur.delve.office.com/?u=aefc3072-ccc1-4bcc-8ceb-06e321998080&v=work')
         }
     },
     {
@@ -80,14 +80,7 @@ WA.room.onLeaveZone('ARH',() =>{
 
 let payroll=null;
 WA.room.onEnterZone('payroll', () => {
-    payroll = WA.ui.openPopup("target", "Si tu as des questions sur les sujets suivants:\n -Information sur les fiches de paie \n -Gestion des avances sur frais \n -Mise à jour des données personnelles \n -Suivi des arrêts maladie et gestion des dossiers Mutuelle et Prévoyance \n -Traitement des notes de frais non refacturables \n -Remboursement des abonnements de transports en commun \n -Suivi des absences (congés, CDT, sans solde) \n tu peux contacter la Mailing list IDA Payroll and staff administration", [{
-        label: "Envoyer un mail",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            WA.nav.openTab('mailto:IDAPayrollandstaffadministration@wavestone.com')
-        }
-    },
+    payroll = WA.ui.openPopup("target", "Si tu as des questions sur les sujets suivants:\n -Information sur les fiches de paie \n -Gestion des avances sur frais \n -Mise à jour des données personnelles \n -Suivi des arrêts maladie et gestion des dossiers Mutuelle et Prévoyance \n -Traitement des notes de frais non refacturables \n -Remboursement des abonnements de transports en commun \n -Suivi des absences (congés, CDT, sans solde) \n tu peux contacter la Mailing list IDA Payroll and staff administration \n\n\n Envoyer un mail à WL-[Practice]Payrollandstaffadministration", [
     {
         label: "Close",
         className: "primary",
