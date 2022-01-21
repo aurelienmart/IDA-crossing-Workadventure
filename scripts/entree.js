@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('start', () => {
-    popintro1 = WA.ui.openPopup("start 1", 'Bienvenue sur WorkAventure !', [{
+    popintro1 = WA.ui.openPopup("start 1", 'Bienvenue sur WorkAdventure !', [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
