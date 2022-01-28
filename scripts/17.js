@@ -170,5 +170,18 @@ WA.room.onLeaveZone('MaximeB',() =>{
     
     });
 
+    let goelan=null;
+    WA.room.onEnterZone('GOELAN', () => {
+        goelan=WA.ui.displayActionMessage({
+            message: "Appuyez sur Espace pour accéder au mot de passe",
+            callback: () => {
+                WA.nav.openTab("https://go-elan.com/enigmes/woorkaadveentuuree/screen/index.html")
+            }
+        })
+    });
+    
+    WA.room.onLeaveZone('GOELAN',()=>{
+        goelan.remove();
+    })
 
 
