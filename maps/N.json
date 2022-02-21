@@ -48,7 +48,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"O.json"
+                 "value":"WW.json"
                 }],
          "type":"tilelayer",
          "visible":true,
