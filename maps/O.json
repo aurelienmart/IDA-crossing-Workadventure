@@ -80,6 +80,17 @@
          "id":1,
          "name":"Ground",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"audioVolume",
+                 "type":"float",
+                 "value":0.5
+                }, 
+                {
+                 "name":"playAudio",
+                 "type":"string",
+                 "value":"..\/medias\/SG.mp3"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":21,
