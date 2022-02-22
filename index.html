@@ -11,26 +11,20 @@
             }
         </style>
         <script>
-            window.onload = function() {
+            IDA =function(){
                 const host = window.location.host;
                 let path = window.location.pathname;
-                if (path.endsWith('index.html')) {
-                    path = path.substr(path, path.length - 'index.html'.length);
-                }
-                const instanceId = 'IDA'
-                const url = `https://play.workadventu.re/_/${instanceId}/${host}${path}/maps/entree.json`;
-                document.getElementById('IDA').href = url;
-
-                const url2 = `https://play.workadventu.re/_/NA/${host}${path}/maps/entree.json`;
-                document.getElementById('NA').href = url2;
-
-                const mapUrl = window.location.protocol+'//'+window.location.host+path+'/maps/entree.json';
-                document.getElementById('mapUrl').innerText = mapUrl;
-
-                const gettingStartedLink = 'https://workadventu.re/getting-started?name=Map&mapUrl='+mapUrl;
-                document.getElementById('gettingStartedLink').href = gettingStartedLink;
-
-            };
+                const namesess='IDA';
+                const url3 = `https://play.workadventu.re/_/${namesess}/${host}${path}/maps/entree.json`;
+                window.open(url3)
+            }
+            NA =function(){
+                const host = window.location.host;
+                let path = window.location.pathname;
+                const namesess='NA';
+                const url3 = `https://play.workadventu.re/_/${namesess}/${host}${path}/maps/entree.json`;
+                window.open(url3)
+            }
             validate =function(){
                 const host = window.location.host;
                 let path = window.location.pathname;
@@ -48,8 +42,8 @@
             <div class="useful-width">
                 <div class="nes-container with-title is-centered" style="margin-top: 1rem">
                     <p class="title">Sessions disponibles:</p>
-                    <p><a id="IDA" href="" class="nes-btn is-primary">IDA</a></p>
-                    <p><a id="NA" href="" class="nes-btn is-primary">Nouveaux arrivants</a></p>
+                    <p><a id="IDA"onClick=IDA() class="nes-btn is-primary">IDA</a></p>
+                    <p><a id="NA" onClick=NA() class="nes-btn is-primary">Nouveaux arrivants</a></p>
                     <p>Session privée:</p>
                     <p><input type="text" id="name" name="name" required
                         minlength="4" maxlength="8" size="10"><a id="private" onClick=validate() class="nes-btn is-primary">créer/rejoindre</a></p>
@@ -64,9 +58,14 @@
             </div>
         </div>
 
-    <footer style="position: fixed; bottom: 0;width:100vw;">
+        <div id="'counter" style="float:left">
+            <a href='https://www.versicherungen.at/unfallversicherung-rechner/'>Unfallversicherung Österreich</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=5f92035894f668b637e3bc3418cd7d81f6fd59a1'></script>
+            <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/921354/t/0"></script>
+        </div>
+    <footer style="position: fixed; bottom: 0;width:80vw;right: 0;">
         <a style="margin-left: 1rem; color:blue;" href="mailto:fanny.ezingeard@wavestone.com;clara.huyghe@wavestone.com;thomas.gallois@wavestone.com;aurelien.martinez@wavestone.com">Nous contacter</a>
     <img src="wavestonefull.png" style="max-height:10vh;float:right; margin-bottom: 1rem;margin-right: 1rem;">
+   
     </footer>
     </body>
 </html>
