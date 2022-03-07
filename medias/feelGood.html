@@ -8,7 +8,32 @@
         <img src="feelgood.jpg">
         <br>
         <a>Join Meeting</a>
+        <div id="heure_exacte"></div><br>
     <footer>
     </footer>
     </body>
 </html>
+<script>
+function nextsession(min){
+    if (min>45){
+        return 60-min
+    }
+    else if (min>30){
+        return 45-min
+    }
+    else if (min >15){
+        return 30-min
+    }
+    else {
+        return 15-min
+    }
+}
+
+function dateEtHeure() {
+const infos = new Date();
+document.getElementById('heure_exacte').innerHTML = "Prochaine session dans " + nextsession(infos.getMinutes()) + " mn";
+}
+window.onload = function() {
+setInterval("dateEtHeure()", 100);
+}; 
+</script>
