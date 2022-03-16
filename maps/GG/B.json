@@ -30,7 +30,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":".\/T\/T1.json"
+                 "value":".\/B\/B1.json"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -48,7 +48,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":".\/T\/T2.json"
+                 "value":".\/B\/B2.json"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -66,7 +66,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":".\/T\/T3.json"
+                 "value":".\/B\/B3.json"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -84,7 +84,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":".\/T\/T4.json"
+                 "value":".\/B\/B4.json"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -102,7 +102,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":".\/T\/T5.json"
+                 "value":".\/B\/B5.json"
                 }],
          "type":"tilelayer",
          "visible":true,
