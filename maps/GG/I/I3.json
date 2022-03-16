@@ -78,11 +78,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-<<<<<<< HEAD
                  "value":"..\/I.json"
-=======
-                 "value":"..\/A.json"
->>>>>>> c0c641b (Ajout des couloirs T B L I C et de leurs salles respectives)
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -215,11 +211,7 @@
         {
          "name":"script",
          "type":"string",
-<<<<<<< HEAD
          "value":"..\/..\/..\/scripts\/GG\/I\/I3.js"
-=======
-         "value":"..\/..\/..\/scripts\/GG\/A\/A3.js"
->>>>>>> c0c641b (Ajout des couloirs T B L I C et de leurs salles respectives)
         }],
  "renderorder":"right-down",
  "tiledversion":"1.7.2",
