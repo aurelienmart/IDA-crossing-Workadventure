@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="../GG.css">
+    </head>
+    <body>
+        <hearder><h1>Core AI : L'Oréal</h1></hearder> 
+        <!-- A changer par le nom de l'initiative -->
+        <br>
+        <img src="C3.jpg"><!-- A changer par le nom de l'affiche
+         -->
+        <br>
+        <div id="heure_exacte"></div><br>
+    <footer>
+    </footer>
+    </body>
+</html>
+<script>
+function nextsession(min){
+    if (min>45){
+        return 60-min
+    }
+    else if (min>30){
+        return 45-min
+    }
+    else if (min >15){
+        return 30-min
+    }
+    else {
+        return 15-min
+    }
+}
+
+function dateEtHeure() {
+const infos = new Date();
+document.getElementById('heure_exacte').innerHTML = "Prochaine session dans " + nextsession(infos.getMinutes()) + " mn";
+}
+window.onload = function() {
+setInterval("dateEtHeure()", 100);
+}; 
+</script>

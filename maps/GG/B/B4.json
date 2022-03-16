@@ -78,7 +78,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":"..\/A.json"
+                 "value":"..\/B.json"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -211,7 +211,7 @@
         {
          "name":"script",
          "type":"string",
-         "value":"..\/..\/..\/scripts\/GG\/A\/A4.js"
+         "value":"..\/..\/..\/scripts\/GG\/B\/B4.js"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.7.2",
