@@ -1,28 +1,37 @@
 body{
-    background-image: url('bgGG.jpg');
+    color: black;
     background-size: cover;
     display: flex;
     flex-direction: column;
 }
 h1{
-    color: blue;
+    color: #efd807;
     text-align: center;
-    font-weight: 700;
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+}
+h2{
+    color: #efd807;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
 }
 img{
     max-height: 60vh;
     margin: 0 auto;
-    
 }
 #heure_exacte{
-    background-color: #7B83EB;
+    background-color: #efd807;
     padding: 0.5em;
     border-radius: 10px;
-    color:white;
-    font-weight: 500;
+    color:black;
+    font-weight: bold;
     font-family: sans-serif;
     text-align: center;
     max-width: max-content;
     margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: x-large;
 }
