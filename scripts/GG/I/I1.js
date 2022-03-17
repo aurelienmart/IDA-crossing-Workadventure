@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", 'Insérer texte', [{
+    popintro1 = WA.ui.openPopup("presentation", `Bienven'IDA est l'initiative en charge de l'accueil et de l'intégration informelle des nouvelles recrues chez IDA. Notre objectif est simple, mieux intégrer les nouvelles recrues avec une volonté de créer un effet de promotion !`, [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -19,7 +19,7 @@ WA.room.onEnterZone('teams', () => {
     meeting=WA.ui.displayActionMessage({
         message: "Appuyez sur Espace pour accéder à la réunion teams",
         callback: () => {
-            WA.nav.openTab("insérer lien")
+            WA.nav.openTab("https://teams.microsoft.com/l/meetup-join/19%3ameeting_M2ZlMDhlZWYtNDZkYy00ZjIxLWJiNGYtMjNmMzdhM2NkZmQ0%40thread.v2/0?context=%7b%22Tid%22%3a%225de96c96-c87c-4dce-aad9-f5c557b52ac1%22%2c%22Oid%22%3a%2293e6bf65-3f7c-41dd-919b-e27e825683be%22%7d")
         }
     })
 });
