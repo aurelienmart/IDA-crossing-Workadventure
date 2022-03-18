@@ -504,7 +504,7 @@
         {
          "columns":1,
          "firstgid":13641,
-         "image":"..\/tilesets\/carr\u00e9A.png",
+         "image":"..\/tilesets\/logoA.png",
          "imageheight":122,
          "imagewidth":110,
          "margin":0,
@@ -517,7 +517,7 @@
         {
          "columns":1,
          "firstgid":13642,
-         "image":"..\/tilesets\/carr\u00e9B.png",
+         "image":"..\/tilesets\/logoB.png",
          "imageheight":122,
          "imagewidth":110,
          "margin":0,
@@ -530,7 +530,7 @@
         {
          "columns":1,
          "firstgid":13643,
-         "image":"..\/tilesets\/carr\u00e9C.png",
+         "image":"..\/tilesets\/logoC.png",
          "imageheight":122,
          "imagewidth":109,
          "margin":0,
@@ -543,7 +543,7 @@
         {
          "columns":1,
          "firstgid":13644,
-         "image":"..\/tilesets\/carr\u00e9I.png",
+         "image":"..\/tilesets\/logoI.png",
          "imageheight":122,
          "imagewidth":109,
          "margin":0,
@@ -556,7 +556,7 @@
         {
          "columns":1,
          "firstgid":13645,
-         "image":"..\/tilesets\/carr\u00e9L.png",
+         "image":"..\/tilesets\/logoL.png",
          "imageheight":123,
          "imagewidth":109,
          "margin":0,
@@ -569,7 +569,7 @@
         {
          "columns":1,
          "firstgid":13646,
-         "image":"..\/tilesets\/carr\u00e9T.png",
+         "image":"..\/tilesets\/logoT.png",
          "imageheight":122,
          "imagewidth":110,
          "margin":0,
