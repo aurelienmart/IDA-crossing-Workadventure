@@ -591,6 +591,19 @@
          "tilecount":9,
          "tileheight":32,
          "tilewidth":32
+        }, 
+        {
+         "columns":81,
+         "firstgid":7981,
+         "image":"..\/tilesets\/hexagon.png",
+         "imageheight":2558,
+         "imagewidth":2596,
+         "margin":0,
+         "name":"hexagon",
+         "spacing":0,
+         "tilecount":6399,
+         "tileheight":32,
+         "tilewidth":32
         }],
  "tilewidth":32,
  "type":"map",
