@@ -20,8 +20,7 @@ WA.room.onEnterZone('teams', () => {
     meeting=WA.ui.displayActionMessage({
         message: "Appuyez sur Espace pour accéder à la réunion teams",
         callback: () => {
-            WA.nav.openTab("https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjMxNzFkNTUtNjVkMy00Nzc4LTk1MDgtNjZkOWEyNTMxOTY1%40thread.v2/0?context=%7b%22Tid%22%3a%225de96c96-c87c-4dce-aad9-f5c557b52ac1%22%2c%22Oid%22%3a%22733ce17f-0f71-4e99-9fb4-c28e6ef7c0c6%22%7d
-			")
+            WA.nav.openTab("https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjMxNzFkNTUtNjVkMy00Nzc4LTk1MDgtNjZkOWEyNTMxOTY1%40thread.v2/0?context=%7b%22Tid%22%3a%225de96c96-c87c-4dce-aad9-f5c557b52ac1%22%2c%22Oid%22%3a%22733ce17f-0f71-4e99-9fb4-c28e6ef7c0c6%22%7d")
         }
     })
 });
