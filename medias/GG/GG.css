@@ -9,23 +9,25 @@ h1{
     text-align: center;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
+    font-size: 40px;
 }
 h2{
     color: #efd807c7;
     text-align: center;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-top: 20px;
 }
 #affiche_initiative{
-    max-height: 60vh;
+    max-height: 55vh;
     margin: 0 auto;
 }
 #logo_couloir{
-    max-height: 100px;
+    max-height: 8vh;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 #heure_exacte{
     background-color: #efd807c7;
@@ -38,6 +40,5 @@ h2{
     max-width: max-content;
     margin: 0 auto;
     margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: x-large;
+    font-size: 20px;
 }
