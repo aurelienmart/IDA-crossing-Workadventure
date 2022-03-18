@@ -5,24 +5,30 @@ body{
     flex-direction: column;
 }
 h1{
-    color: #efd807;
+    color: #efd807c7;
     text-align: center;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
 }
 h2{
-    color: #efd807;
+    color: #efd807c7;
     text-align: center;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
 }
-img{
+#affiche_initiative{
     max-height: 60vh;
     margin: 0 auto;
 }
+#logo_couloir{
+    max-height: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 #heure_exacte{
-    background-color: #efd807;
+    background-color: #efd807c7;
     padding: 0.5em;
     border-radius: 10px;
     color:black;
