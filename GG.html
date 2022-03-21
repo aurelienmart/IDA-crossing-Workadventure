@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+        <link href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css" rel="stylesheet" />
+        <style>
+            .useful-width{
+                /* center the html elements */
+                max-width: 800px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        </style>
+        <script>
+            window.onload = function() {
+                const host = window.location.host;
+                let path = window.location.pathname;
+                if (path.endsWith('index.html')) {
+                    path = path.substr(path, path.length - 'index.html'.length);
+                }
+                const instanceId = 'GG'
+                const url = `https://play.workadventu.re/_/${instanceId}/${host}${path}/maps/GG/lobbyGG.json`;
+                document.getElementById('GG').href = url;
+
+
+            };
+        </script>
+    </head>
+    <body style="background-color: white; background-size: cover;">
+        <hearder style="width: 100vw"><img src="logoGG.png" alt="" style="width: 40vw;margin-left: 30vw; margin-right: 30vw;"></hearder>
+        <br>
+        <div class="Session" style="float:left; margin-left: 5em;margin-right: 5em;">
+            <h2 style="text-align: center; margin-top: 2rem">Rejoindre WorkAdventure</h2>
+            <div class="useful-width">
+                <div class="nes-container with-title is-centered" style="margin-top: 1rem">
+                    <p class="title">Sessions disponibles:</p>
+                    <p><a id="GG" href="" class="nes-btn is-primary">Golden Globes IDA</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Commands" style="float:right;margin-right: 5em;margin-top: 2rem;">
+            <div class="nes-container with-title is-centered" style="margin-top: 1rem">
+                <p class="title">Commandes:</p>
+                <img src="command.png" style="max-width:30vw;">
+            </div>
+        </div>
+
+    <footer style="position: fixed; bottom: 0;width:100vw;">
+                <div id="'counter" style="float:left">
+            <a href='https://www.versicherungen.at/unfallversicherung-rechner/' style="visibility: hidden;">Unfallversicherung Österreich</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=5f92035894f668b637e3bc3418cd7d81f6fd59a1'></script>
+            <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/921354/t/0"></script>
+        </div>
+       
+    <img src="wavestonefull.png" style="max-height:10vh;float:right; margin-bottom: 1rem;margin-right: 1rem;">
+    </footer>
+    </body>
+</html>
