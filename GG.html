@@ -11,18 +11,16 @@
             }
         </style>
         <script>
-            window.onload = function() {
+            validate =function(){
                 const host = window.location.host;
                 let path = window.location.pathname;
                 if (path.endsWith('GG.html')) {
                     path = path.substr(path, path.length - 'GG.html'.length);
                 }
-                const instanceId = 'GG'
-                const url = `https://play.workadventu.re/_/${instanceId}/${host}${path}/maps/GG/lobbyGG.json`;
-                document.getElementById('GG').href = url;
-
-
-            };
+                const namesess='GG'
+                const url3 = `https://play.workadventu.re/_/${namesess}/${host}${path}/maps/GG/lobbyGG.json`;
+                window.open(url3)
+            }
         </script>
     </head>
     <body style="background-color: white; background-size: cover;">
@@ -33,7 +31,7 @@
             <div class="useful-width">
                 <div class="nes-container with-title is-centered" style="margin-top: 1rem">
                     <p class="title">Sessions disponibles:</p>
-                    <p><a id="GG" href="" class="nes-btn is-primary">Golden Globes IDA</a></p>
+                    <p><a id="IDA" class="nes-btn is-primary" onClick=validate()>Golden Globes IDA</a></p>
                 </div>
             </div>
         </div>
@@ -47,8 +45,8 @@
 
     <footer style="position: fixed; bottom: 0;width:100vw;">
                 <div id="'counter" style="float:left">
-            <a href='https://www.versicherungen.at/unfallversicherung-rechner/' style="visibility: hidden;">Unfallversicherung Österreich</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=5f92035894f668b637e3bc3418cd7d81f6fd59a1'></script>
-            <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/921354/t/0"></script>
+                    <a href='https://www.versicherungen.at/unfallversicherung-rechner/' style="visibility: hidden;">Unfallversicherung Österreich</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=c02fbd8ffc7100e6d51de7e357ac17f91029405b'></script>
+                    <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/928668/t/0"></script>
         </div>
        
     <img src="wavestonefull.png" style="max-height:10vh;float:right; margin-bottom: 1rem;margin-right: 1rem;">
