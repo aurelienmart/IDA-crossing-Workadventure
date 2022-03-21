@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", 'Insérer texte', [{
+    popintro1 = WA.ui.openPopup("presentation", "Dal'IDA c'est l'organisation des afterworks mémorables dont tu ne te rappelles pas !", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -19,7 +19,7 @@ WA.room.onEnterZone('teams', () => {
     meeting=WA.ui.displayActionMessage({
         message: "Appuyez sur Espace pour accéder à la réunion teams",
         callback: () => {
-            WA.nav.openTab("insérer lien")
+            WA.nav.openTab("https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWY1ZDhhYjItNTFjMS00MGM4LWFjY2MtOTg0YzI5N2NkNTM3%40thread.v2/0?context=%7b%22Tid%22%3a%225de96c96-c87c-4dce-aad9-f5c557b52ac1%22%2c%22Oid%22%3a%227ba6a1a5-853a-4bb0-a356-8d4c0667352d%22%7d")
         }
     })
 });
