@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "Tech For Students est un webinaire à l'intention des étudiants pour leur presenter les different sujets tech et missions portés par Wavestone. Les sujets sont présentés mensuellement et à tour de role par les practices IDA, DET et DIS. Venez découvrir et discuter des sujets couverts et à venir"
+    popintro1 = WA.ui.openPopup("presentation", "Marine FOUCAMBERT : 'Tech For Students est un webinaire à l'intention des étudiants pour leur presenter les different sujets tech et missions portés par Wavestone. Les sujets sont présentés mensuellement et à tour de role par les practices IDA, DET et DIS. Venez découvrir et discuter des sujets couverts et à venir' \n \n Avancez pour rejoindre la réunion teams"
     , [{
         label: "Close",
         className: "primary",

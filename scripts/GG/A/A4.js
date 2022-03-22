@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", 'Aurélien Deveaux : Feel Good Coffee c’est l’un des nombreux channels Teams de practice que nous avons lancé en 2021, un lieu de partage et de communication pour tout IDA. Bon c’est aussi l’endroit où on se lâche un peu, à coups de gifs et mêmes concoctés chaque jour par quelques « rédacteurs » bien connus', [{
+    popintro1 = WA.ui.openPopup("presentation", 'Aurélien Deveaux : Feel Good Coffee c’est l’un des nombreux channels Teams de practice que nous avons lancé en 2021, un lieu de partage et de communication pour tout IDA. Bon c’est aussi l’endroit où on se lâche un peu, à coups de gifs et mêmes concoctés chaque jour par quelques « rédacteurs » bien connus \n \n Avancez pour rejoindre la réunion teams' , [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
