@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", 'MakeIT a pour but de rassembler les différentes communautés tech de Wavestone et ainsi promouvoir le savoir faire technique de nos consultants. Nous communiquons sur de nombreux projets et nous sommes toujours en recherche de nouveaux talents qui souhaite monter en compétences sur des sujets techniques.', [{
+    popintro1 = WA.ui.openPopup("presentation", "Etienne GANDILHON : 'MakeIT a pour but de rassembler les différentes communautés tech de Wavestone et ainsi promouvoir le savoir faire technique de nos consultants. Nous communiquons sur de nombreux projets et nous sommes toujours en recherche de nouveaux talents qui souhaite monter en compétences sur des sujets techniques.' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

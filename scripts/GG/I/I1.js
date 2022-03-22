@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", `Bienven'IDA est l'initiative en charge de l'accueil et de l'intégration informelle des nouvelles recrues chez IDA. Notre objectif est simple, mieux intégrer les nouvelles recrues avec une volonté de créer un effet de promotion !`, [{
+    popintro1 = WA.ui.openPopup("presentation", "Tusanth THALAYASINGAM 'Bienven'IDA est l'initiative en charge de l'accueil et de l'intégration informelle des nouvelles recrues chez IDA. Notre objectif est simple, mieux intégrer les nouvelles recrues avec une volonté de créer un effet de promotion !' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "COWS, c'est la communauté des stagiaires, par les stagiaires, pour les stagiaires chez IDA - afin de faciliter leur intégration et d'organiser plein d'évents cool pour leur faire connaître leurs camarades, IDA et Wavestone !", [{
+    popintro1 = WA.ui.openPopup("presentation", "Olivia DALMASSO : 'COWS, c'est la communauté des stagiaires, par les stagiaires, pour les stagiaires chez IDA - afin de faciliter leur intégration et d'organiser plein d'évents cool pour leur faire connaître leurs camarades, IDA et Wavestone !' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

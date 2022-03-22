@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "IDA for Good est l'antenne relai IDA de la stratégie RSE de notre cabinet. L'objectif est double : assurer la sensibilisation des collaborateurs IDA aux sujets RSE porté par Wavestone et adapter la stratégie RSE aux problématiques et spécificités de notre practice. Les thématiques RSE portées aujourd'hui par IDA for Good sont le mécénat de compétences, la parité femmes/hommes, ainsi que la responsabilité environnementale."
+    popintro1 = WA.ui.openPopup("presentation", "Jeanne BOUAZIZ : 'IDA for Good est l'antenne relai IDA de la stratégie RSE de notre cabinet. L'objectif est double : assurer la sensibilisation des collaborateurs IDA aux sujets RSE porté par Wavestone et adapter la stratégie RSE aux problématiques et spécificités de notre practice. Les thématiques RSE portées aujourd'hui par IDA for Good sont le mécénat de compétences, la parité femmes/hommes, ainsi que la responsabilité environnementale.' \n \n Avancez pour rejoindre la réunion teams"
     , [{
         label: "Close",
         className: "primary",

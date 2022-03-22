@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "Sustainable Tech for IDA c'est une nouvelle équipe au sein de Next Gen IT qui travaille sur la déclinaison de nos savoirs faire architecture & DevOps sur les enjeux d'éco-responsabilité : Eco-conception applicative, Green Datacenter, GreenOps , architecture frugale… Notre but est simple : injecter de plus en plus de considérations eco-responsables dans les missions IDA !", [{
+    popintro1 = WA.ui.openPopup("presentation", "Pauline PARISOT : 'Sustainable Tech for IDA c'est une nouvelle équipe au sein de Next Gen IT qui travaille sur la déclinaison de nos savoirs faire architecture & DevOps sur les enjeux d'éco-responsabilité : Eco-conception applicative, Green Datacenter, GreenOps , architecture frugale… Notre but est simple : injecter de plus en plus de considérations eco-responsables dans les missions IDA !' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

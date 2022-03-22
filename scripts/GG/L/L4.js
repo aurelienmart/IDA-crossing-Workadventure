@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "Skill’Up Business, c’est un dispositif imaginé pour accompagner dans la formation nos consultants qui souhaitent monter en compétences sur le volet business. Fonctionnant en binôme rookie / mentor, le mentor va partager les ficelles du métier au rookie en l'embarquant sur toutes les phases d'une avant-vente mission (pitch, propale, demande plan de charge,...). Toi aussi tu t’intéresses au business ? Ou tu souhaites voir comme nous avons réussi à faire passer cette initiative à l’échelle practice ? C’est par ici !    ", [{
+    popintro1 = WA.ui.openPopup("presentation", "Edouard SCHEFFER-KUNTZ : 'Skill’Up Business, c’est un dispositif imaginé pour accompagner dans la formation nos consultants qui souhaitent monter en compétences sur le volet business. Fonctionnant en binôme rookie / mentor, le mentor va partager les ficelles du métier au rookie en l'embarquant sur toutes les phases d'une avant-vente mission (pitch, propale, demande plan de charge,...). Toi aussi tu t’intéresses au business ? Ou tu souhaites voir comme nous avons réussi à faire passer cette initiative à l’échelle practice ? C’est par ici !' \n \n Avancez pour rejoindre la réunion teams    ", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

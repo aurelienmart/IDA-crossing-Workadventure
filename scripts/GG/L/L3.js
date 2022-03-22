@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "La coordination du Plan de Charge, c'est une équipe de 7 Power Rangers en charge de qualifier toutes les demandes, de les rentrer dans PxxxL et d'animer les plans de charge, bref de faire en sorte que tout roule !! Une Task Force spéciale a même été montée pour staffer nos jeunes !    ", [{
+    popintro1 = WA.ui.openPopup("presentation", "Dominique GALLOTTI : 'La coordination du Plan de Charge, c'est une équipe de 7 Power Rangers en charge de qualifier toutes les demandes, de les rentrer dans PxxxL et d'animer les plans de charge, bref de faire en sorte que tout roule !! Une Task Force spéciale a même été montée pour staffer nos jeunes !' \n \n Avancez pour rejoindre la réunion teams   ", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

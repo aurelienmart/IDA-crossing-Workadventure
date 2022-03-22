@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", " Le pôle biz IDA c'est l'équipe qui gère le pilotage commercial de la practice : on suit tous les indicateurs clés tels que le pipe (le volume d'opportunités clients), la prise de commande, le nombre de pitchs, etc. On se coordonne avec les cercles mais aussi les relais de compte pour identifier les ventes clés et les plans d'actions à mener.    ", [{
+    popintro1 = WA.ui.openPopup("presentation", "Mathilde PINASSEAU : 'Le pôle biz IDA c'est l'équipe qui gère le pilotage commercial de la practice : on suit tous les indicateurs clés tels que le pipe (le volume d'opportunités clients), la prise de commande, le nombre de pitchs, etc. On se coordonne avec les cercles mais aussi les relais de compte pour identifier les ventes clés et les plans d'actions à mener.' \n \n Avancez pour rejoindre la réunion teams    ", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "Libérer l'EA, c'est s'autoriser à améliorer le mode de fonctionnement de l'Entretien Annuel en repensant le déroulé de l'exercice, la construction du parcours du consultant entre le CDM et le CDMee et les types de trajectoires que l'on propose aujourd'hui. Tu aimes sortir du cadre ? Alors viens libérer l'EA avec nous !    ", [{
+    popintro1 = WA.ui.openPopup("presentation", "Julie CRISTOFOL : 'Libérer l'EA, c'est s'autoriser à améliorer le mode de fonctionnement de l'Entretien Annuel en repensant le déroulé de l'exercice, la construction du parcours du consultant entre le CDM et le CDMee et les types de trajectoires que l'on propose aujourd'hui. Tu aimes sortir du cadre ? Alors viens libérer l'EA avec nous ! '\n \n Avancez pour rejoindre la réunion teams    ", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "Proposer aux consultant.e.s d'IDA de tous niveaux, les formations et les certifications qui les permettront de monter en maturité et d'apporter toujours plus de valeur à nos clients !", [{
+    popintro1 = WA.ui.openPopup("presentation", "Emma LAMOTHE : 'Proposer aux consultant.e.s d'IDA de tous niveaux, les formations et les certifications qui les permettront de monter en maturité et d'apporter toujours plus de valeur à nos clients !' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

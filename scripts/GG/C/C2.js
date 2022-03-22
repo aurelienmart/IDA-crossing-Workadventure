@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "AXA REACTIVATED, une simple migration vers le Cloud ? Venez découvrir les aventures de nos consultants IDA qui ont su déjouer les infâmes plans du Covid-19 pour mettre à mal cette mission.", [{
+    popintro1 = WA.ui.openPopup("presentation", "'Louis JAOUEN : 'AXA REACTIVATED, une simple migration vers le Cloud ? Venez découvrir les aventures de nos consultants IDA qui ont su déjouer les infâmes plans du Covid-19 pour mettre à mal cette mission.' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

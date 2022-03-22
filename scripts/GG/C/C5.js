@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "Dans le cadre de la cession de Lapeyre par Saint-Gobain à un fond d’investissement allemand, Mutares, Wavestone a accompagné la DSI Lapeyre sur le cadrage et l'exécution du projet d’autonomisation du SI Lapeyre. Wavestone a dû gérer des adhérences fortes avec des programmes SI métier en cours, et s'adapter à un planning serré (TSA initial de 10 mois). Venez découvrir les résultats obtenus cette année par le large dispositif Wavestone déployé au sein de Lapeyre !", [{
+    popintro1 = WA.ui.openPopup("presentation", "Leonard HEMION : 'Dans le cadre de la cession de Lapeyre par Saint-Gobain à un fond d’investissement allemand, Mutares, Wavestone a accompagné la DSI Lapeyre sur le cadrage et l'exécution du projet d’autonomisation du SI Lapeyre. Wavestone a dû gérer des adhérences fortes avec des programmes SI métier en cours, et s'adapter à un planning serré (TSA initial de 10 mois). Venez découvrir les résultats obtenus cette année par le large dispositif Wavestone déployé au sein de Lapeyre !' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

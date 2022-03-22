@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "Dans le cadre de leur redéfinition de la beauty tech, L'Oréal se munit de plusieurs briques technologiques pour développer une multitude de cas d'usages. L'une des briques majeures de cette stratégie est un assistant selfie augmenté à l'IA, notamment pour assurer une qualité de photos suffisante pour qu'elles servent notamment de base à un suivi dermatologique.", [{
+    popintro1 = WA.ui.openPopup("presentation", "Hoël PLANTEC : 'Dans le cadre de leur redéfinition de la beauty tech, L'Oréal se munit de plusieurs briques technologiques pour développer une multitude de cas d'usages. L'une des briques majeures de cette stratégie est un assistant selfie augmenté à l'IA, notamment pour assurer une qualité de photos suffisante pour qu'elles servent notamment de base à un suivi dermatologique.' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

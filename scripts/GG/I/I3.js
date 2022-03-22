@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", '« Chers consultants et consultantes de la maison IDA, ces deux dernières années ont été marquées par le combat d’un virus diabolique dont on ne doit pas prononcer le nom. Nous avons malgré tout accueilli de nombreux apprentis consultants au sein de notre école en adaptant et enrichissant notre parcours d’intégration, venez donc le découvrir ! »    ', [{
+    popintro1 = WA.ui.openPopup("presentation", 'Elise AMADEI : « Chers consultants et consultantes de la maison IDA, ces deux dernières années ont été marquées par le combat d’un virus diabolique dont on ne doit pas prononcer le nom. Nous avons malgré tout accueilli de nombreux apprentis consultants au sein de notre école en adaptant et enrichissant notre parcours d’intégration, venez donc le découvrir ! » \n \n Avancez pour rejoindre la réunion teams', [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

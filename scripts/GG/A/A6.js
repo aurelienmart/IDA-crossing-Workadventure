@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "Dal'IDA c'est l'organisation des afterworks mémorables dont tu ne te rappelles pas !", [{
+    popintro1 = WA.ui.openPopup("presentation", "Roman ESQUERRE: 'Dal'IDA c'est l'organisation des afterworks mémorables dont tu ne te rappelles pas !' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

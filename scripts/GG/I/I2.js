@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "La roulette de l'interne est l'initiative en charge de faire découvrir aux nouveaux arrivants les rouages des cercles et initiatives internes en les affectant à une activité temporaire chaque semaine au cours des 3 semaines suivant leur intégration. L'objectif est de leur donner envie de contribuer à ces cercles et initiatives de manière durable, afin de favoriser leur épanouissement en interne et le développement de la practice", [{
+    popintro1 = WA.ui.openPopup("presentation", "Mohamed Aimed HAMOUR : 'La roulette de l'interne est l'initiative en charge de faire découvrir aux nouveaux arrivants les rouages des cercles et initiatives internes en les affectant à une activité temporaire chaque semaine au cours des 3 semaines suivant leur intégration. L'objectif est de leur donner envie de contribuer à ces cercles et initiatives de manière durable, afin de favoriser leur épanouissement en interne et le développement de la practice' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
