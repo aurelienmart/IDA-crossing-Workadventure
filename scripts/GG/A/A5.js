@@ -1,7 +1,7 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
     popintro1 = WA.ui.openPopup("presentation", `Nans PREJEAN : "Meet'IDA ce sont des lives qui te permettent de découvrir les personnes et les initiatives d'IDA. 
-Que tu sois nouvel arrivant ou un peu plus expérimenté tu trouveras toujours un sujet qui t'intéresse sur un Meet'IDA."`, [{
+Que tu sois nouvel arrivant ou un peu plus expérimenté tu trouveras toujours un sujet qui t'intéresse sur un Meet'IDA." \n \n Avancez pour rejoindre la réunion teams`, [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

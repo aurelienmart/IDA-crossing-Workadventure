@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "L'initiative communication externe vise à promouvoir une communication décompléxée des consultants en leur donnant les clés pour réussir l'écriture de leurs articles. L'objectif étant d'améliorer la présence de Wavestone sur les réseaux et ainsi servir d'accélérateur pour le business et le recrutement.", [{
+    popintro1 = WA.ui.openPopup("presentation", "Baptiste PUGNAIRE : 'L'initiative communication externe vise à promouvoir une communication décompléxée des consultants en leur donnant les clés pour réussir l'écriture de leurs articles. L'objectif étant d'améliorer la présence de Wavestone sur les réseaux et ainsi servir d'accélérateur pour le business et le recrutement.' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {

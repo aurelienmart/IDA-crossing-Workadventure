@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "pXXX-L est l'Application interne dévelopée, hébergée et maintenue sur GCP par une dream team IDA pour animer les plans de charge de plusieurs practices.", [{
+    popintro1 = WA.ui.openPopup("presentation", "Mehdi BETTICHE : 'pXXX-L est l'Application interne dévelopée, hébergée et maintenue sur GCP par une dream team IDA pour animer les plans de charge de plusieurs practices.' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
