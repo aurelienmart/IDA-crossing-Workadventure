@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", `Gael LACOSTE : "Les IDA Live, c’est le rendez-vous régulier de la practice IDA pour transmettre à l'ensemble à tout le monde les dernières actualités, décisions management et évènements à venir.
+    popintro1 = WA.ui.openPopup("presentation", `Maxime BOS : "Les IDA Live, c’est le rendez-vous régulier de la practice IDA pour transmettre à l'ensemble à tout le monde les dernières actualités, décisions management et évènements à venir.
 
 Ne loupez pas nos différents formats : Live show, JT, émission d'investigation, Jeux TV… Pour tout savoir des sujets brûlants de la practice !" \n \n Avancez pour rejoindre la réunion teams`, [{
         label: "Close",
