@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", 'Insérer texte', [{
+    popintro1 = WA.ui.openPopup("presentation", "Anton SPITZER 'Chaque mois, une à deux rencontres avec des acteurs dynamiques du Cloud sont organisées à distance pour te faire découvrir les dernières technologies et nouvelles offres sur le marché du Cloud. Avec ces évènements, il te sera plus facile de te construire des convictions sur les offres cloud ! \n \n Nos réussites :-Reprise du chantier en octobre 2021 & industrialisation de l’organisation des rencontres \n -Animation de 5 ’’Rencontres acteurs’’ avec OVH Cloud, VMWare, Kyndryl, Cycloid & Aviatrix jusqu'à aujourd'hui \n -Planification de 13 autres rencontres jusqu'à 2022, avec AWS, IBM Cloud ou Nutanix \n -Identification de 3 leads de business croisés avec VMWare, Aviatrix & Cycloid \n -+40 participants à chaque rencontre : consultants à managers IDA, mais également des practices DET (expertise réseaux cloud) ou DIS (expertise sourcing IT)' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
@@ -19,7 +19,7 @@ WA.room.onEnterZone('teams', () => {
     meeting=WA.ui.displayActionMessage({
         message: "Appuyez sur Espace pour accéder à la réunion teams",
         callback: () => {
-            WA.nav.openTab("insérer lien")
+            WA.nav.openTab("https://teams.microsoft.com/l/meetup-join/19%3ameeting_MGUxMTAzM2MtYjRkNi00NThkLTgzNzUtYmExYzg1OTMyYjBh%40thread.v2/0?context=%7b%22Tid%22%3a%225de96c96-c87c-4dce-aad9-f5c557b52ac1%22%2c%22Oid%22%3a%22fbe320f7-5761-406d-916c-6ec7c5fd174c%22%7d")
         }
     })
 });
