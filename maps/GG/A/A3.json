@@ -395,14 +395,14 @@
          "columns":1,
          "firstgid":997,
          "image":"..\/..\/tilesets\/Tower Day.png",
-         "imageheight":40,
-         "imagewidth":23,
+         "imageheight":38,
+         "imagewidth":24,
          "margin":0,
          "name":"PNJ",
          "spacing":0,
          "tilecount":1,
-         "tileheight":40,
-         "tilewidth":23
+         "tileheight":38,
+         "tilewidth":24
         }],
  "tilewidth":32,
  "type":"map",
