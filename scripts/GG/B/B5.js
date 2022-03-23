@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "Anton SPITZER 'Chaque mois, une à deux rencontres avec des acteurs dynamiques du Cloud sont organisées à distance pour te faire découvrir les dernières technologies et nouvelles offres sur le marché du Cloud. Avec ces évènements, il te sera plus facile de te construire des convictions sur les offres cloud ! \n \n Nos réussites :-Reprise du chantier en octobre 2021 & industrialisation de l’organisation des rencontres \n -Animation de 5 ’’Rencontres acteurs’’ avec OVH Cloud, VMWare, Kyndryl, Cycloid & Aviatrix jusqu'à aujourd'hui \n -Planification de 13 autres rencontres jusqu'à 2022, avec AWS, IBM Cloud ou Nutanix \n -Identification de 3 leads de business croisés avec VMWare, Aviatrix & Cycloid \n -+40 participants à chaque rencontre : consultants à managers IDA, mais également des practices DET (expertise réseaux cloud) ou DIS (expertise sourcing IT)' \n \n Avancez pour rejoindre la réunion teams", [{
+    popintro1 = WA.ui.openPopup("presentation", "Anton SPITZER : 'Chaque mois, une à deux rencontres avec des acteurs dynamiques du Cloud sont organisées à distance pour te faire découvrir les dernières technologies et nouvelles offres sur le marché du Cloud. Avec ces évènements, il te sera plus facile de te construire des convictions sur les offres cloud ! ' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
