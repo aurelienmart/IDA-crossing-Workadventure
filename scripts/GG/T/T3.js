@@ -1,6 +1,6 @@
 let popintro1=null;
 WA.room.onEnterZone('intro', () => {
-    popintro1 = WA.ui.openPopup("presentation", "Victoire MALINOVSKY : 'A travers ses 35 niveaux, le jeu GO-Elan a permis aux nombreux participants d'utiliser leur ruse, leurs connaissances des initiatives internes à IDA ou dcode.fr pour venir à bout des énigmes !' \n \n Avancez pour rejoindre la réunion teams", [{
+    popintro1 = WA.ui.openPopup("presentation", "Sihem HACHI : 'A travers ses 35 niveaux, le jeu GO-Elan a permis aux nombreux participants d'utiliser leur ruse, leurs connaissances des initiatives internes à IDA ou dcode.fr pour venir à bout des énigmes !' \n \n Avancez pour rejoindre la réunion teams", [{
         label: "Close",
         className: "primary",
         callback: (popup) => {
