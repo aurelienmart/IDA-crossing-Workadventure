@@ -116,6 +116,27 @@
          "id":17,
          "name":"ground",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"audioLoop",
+                 "type":"bool",
+                 "value":true
+                }, 
+                {
+                 "name":"audioVolume",
+                 "type":"float",
+                 "value":0.5
+                }, 
+                {
+                 "name":"playAudio",
+                 "type":"string",
+                 "value":"..\/..\/medias\/elevator.mp3"
+                }, 
+                {
+                 "name":"silent",
+                 "type":"bool",
+                 "value":true
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":37,
@@ -319,7 +340,7 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":28,
+ "nextlayerid":29,
  "nextobjectid":1,
  "orientation":"orthogonal",
  "renderorder":"right-down",
