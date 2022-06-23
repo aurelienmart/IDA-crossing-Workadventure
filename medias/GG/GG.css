@@ -1,0 +1,47 @@
+body{
+    color: black;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+h1{
+    margin-top: 0;
+    color: #efd807c7;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+h2{
+    color: #efd807c7;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    font-size: 15px;
+    margin-top: 2vh;
+}
+#affiche_initiative{
+    max-height: 65vh;
+    margin: 0 auto;
+}
+#logo_couloir{
+    max-height: 6vh;
+    margin: 0 auto;
+    margin-top: 2vh;
+}
+#heure_exacte{
+    background-color: #efd807c7;
+    padding: 0.5em;
+    border-radius: 10px;
+    color:black;
+    font-weight: bold;
+    font-family: sans-serif;
+    text-align: center;
+    max-width: max-content;
+    margin: 0 auto;
+    margin-top: 2vh;
+    font-size: 15px;
+}
