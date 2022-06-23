@@ -5,35 +5,35 @@ WA.room.onEnterZone('start', () => {
         label: "NEXT GEN IT",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab('https://digiplace.sharepoint.com/sites/WOPIDA-BUSINESS/SitePages/Next-Gen-IT.aspx')
+            WA.nav.goToRoom('../maps/Cercles/NextGenIT.json')
         }
     },
     {
         label: "M&A",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab('https://digiplace.sharepoint.com/sites/WOPIDA-BUSINESS/SitePages/M%26A-and-Large-Infrastructure-Project.aspx')
+            WA.nav.goToRoom('../maps/Cercles/MnA.json')
         }
     },
     {
         label: "APM",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab("https://digiplace.sharepoint.com/sites/WOPIDA-BUSINESS/SitePages/Amazing-Platform-Makers--.aspx?from=SendByEmail&e=QrhIcr8h50G6x8cZql-qhw&at=9")
+            WA.nav.goToRoom('../maps/Cercles/APM.json')
         }
     },
     {
         label: "DBT",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab('https://digiplace.sharepoint.com/sites/WOPIDA-BUSINESS/SitePages/Digital-Business-Transformation.aspx')
+            WA.nav.goToRoom('../maps/Cercles/DBT.json')
         }
     },
     {
         label: "CORE AI",
         className: "primary",
         callback: (popup) => {
-            WA.nav.openTab('https://digiplace.sharepoint.com/sites/WOPIDA-BUSINESS/SitePages/Core-AI.aspx')
+            WA.nav.goToRoom('../maps/Cercles/CoreAI.json')
         }
     },
     {
