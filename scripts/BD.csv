@@ -1,0 +1,11 @@
+NodeID,Text,Buttons,Childs
+0,Que veux-tu savoir ?,"Missions types et références clés, Business et propositions","1,2,3"
+1,Lien vers les références,Close,
+2,Et plus précisément ?,"Vision du business, Future évolution, Propositions commerciales, Pitchs, Accélérateurs Business,Close","4,5,6,7,8,9"
+3,Close,Close,
+4,Lien vision du biz,Close,
+5,lien future évolution,Close,
+6,lien propales,Close,
+7,lien pitchs,Close,
+8,lien accélérateur,Close,
+9,Close,Close,
