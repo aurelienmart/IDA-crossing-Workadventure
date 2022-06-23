@@ -10,124 +10,176 @@ WA.room.onLeaveZone('exit',() =>{
     
     });
 
-// Zone de FlorianD
-let popFlorian=null;
 
-WA.room.onEnterZone('Florian', () => {
-    popFlorian = WA.ui.openPopup("targetHaut", "Florian DELECOLLE : 'L'offre Automation & DevOps a pour but de moderniser les couches applicatives,\n par exemple en faisant de la micro segmentation, du DevOps …'", [{
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
-        }
-    }]);
-});
-WA.room.onLeaveZone('Florian',() =>{
-    popFlorian.close();
+// Zone de FlorianD
+let popFlorian=null
+let msgFlorian=null
+WA.room.onEnterZone("Florian", () => {
+    popFlorian=WA.ui.displayActionMessage({
+        message: "Parler à Florian DELECOLLE",
+        callback: () => {
+            msgFlorian=WA.ui.openPopup("targetHaut", "Je represente l'offre Automation & DevOps qui a pour but de moderniser les couches applicatives,\n par exemple en faisant de la micro segmentation, du DevOps …", [{
+                label: "Close",
+                className: "primary",
+                callback: (popup) => {
+                    popup.close()
+                }
+            }]);
+            WA.room.onLeaveZone("Florian",()=>{
+                msgFlorian.close();
+            });
+        ;}
+    })
+})
+WA.room.onLeaveZone("Florian",()=>{
+    popFlorian.remove();
 });
 
 // Zone de MathieuT
-let popMathieu=null;
-
-WA.room.onEnterZone('Mathieu', () => {
-    popMathieu = WA.ui.openPopup("targetHaut", "Mathieu THOUARD : 'L'offre Sourcing & Ecosystems vise a trouver le bon fournisseur pour le bon usage avec les bons contrats'", [{
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
-        }
-    }]);
-});
-WA.room.onLeaveZone('Mathieu',() =>{
-    popMathieu.close();
+let popMathieu=null
+let msgMathieu=null
+WA.room.onEnterZone("Mathieu", () => {
+    popMathieu=WA.ui.displayActionMessage({
+        message: "Parler à Mathieu THOUARD",
+        callback: () => {
+            msgMathieu=WA.ui.openPopup("targetHaut", "Je represente l'offre Sourcing & Ecosystems qui vise a trouver le bon fournisseur pour le bon usage avec les bons contrats", [{
+                label: "Close",
+                className: "primary",
+                callback: (popup) => {
+                    popup.close()
+                }
+            }]);
+            WA.room.onLeaveZone("Mathieu",()=>{
+                msgMathieu.close();
+            });
+        ;}
+    })
+})
+WA.room.onLeaveZone("Mathieu",()=>{
+    popMathieu.remove();
 });
 
 // Zone de AurélienD
-let popAurelien=null;
-
-WA.room.onEnterZone('Aurelien', () => {
-    popAurelien = WA.ui.openPopup("targetBas", "Aurélien DEVEAUX : 'L'offre Agile@Scale & New Ops cherche à adapter les organisations pour profiter des avantages du cloud'", [{
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
-        }
-    }]);
-});
-WA.room.onLeaveZone('Aurelien',() =>{
-    popAurelien.close();
+let popAurelien=null
+let msgAurelien=null
+WA.room.onEnterZone("Aurelien", () => {
+    popAurelien=WA.ui.displayActionMessage({
+        message: "Parler à Aurélien DEVEAUX",
+        callback: () => {
+            msgAurelien=WA.ui.openPopup("targetBas", "Je represente l'offre Agile@Scale & New Ops cherche à adapter les organisations pour profiter des avantages du cloud", [{
+                label: "Close",
+                className: "primary",
+                callback: (popup) => {
+                    popup.close()
+                }
+            }]);
+            WA.room.onLeaveZone("Aurelien",()=>{
+                msgAurelien.close();
+            });
+        ;}
+    })
+})
+WA.room.onLeaveZone("Aurelien",()=>{
+    popAurelien.remove();
 });
 
 // Zone de ClementA
-let popClement=null;
-
-WA.room.onEnterZone('Clement', () => {
-    popClement = WA.ui.openPopup("targetBas", "Clément ADELINE : 'L'offre Pay Per Use & FinOps permet d'optimiser sa consommation pour optimiser sa facture'", [{
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
-        }
-    }]);
-});
-WA.room.onLeaveZone('Clement',() =>{
-    popClement.close();
+let popClement=null
+let msgClement=null
+WA.room.onEnterZone("Clement", () => {
+    popClement=WA.ui.displayActionMessage({
+        message: "Parler à Clément ADELINE",
+        callback: () => {
+            msgClement=WA.ui.openPopup("targetBas", "Je represente l'offre Pay Per Use & FinOps permet d'optimiser sa consommation pour optimiser sa facture", [{
+                label: "Close",
+                className: "primary",
+                callback: (popup) => {
+                    popup.close()
+                }
+            }]);
+            WA.room.onLeaveZone("Clement",()=>{
+                msgClement.close();
+            });
+        ;}
+    })
+})
+WA.room.onLeaveZone("Clement",()=>{
+    popClement.remove();
 });
 
 // Zone de EtienneL
-let popEtienne=null;
-
-WA.room.onEnterZone('Etienne', () => {
-    popEtienne = WA.ui.openPopup("targetBas", "Etienne LAFORE : 'Avec l'offre Cloud Sec & SecOps on se protège contre les attaques de pirates de l'espace !!'", [{
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
-        }
-    }]);
-});
-WA.room.onLeaveZone('Etienne',() =>{
-    popEtienne.close();
+let popEtienne=null
+let msgEtienne=null
+WA.room.onEnterZone("Etienne", () => {
+    popEtienne=WA.ui.displayActionMessage({
+        message: "Parler à Etienne LAFORE",
+        callback: () => {
+            msgEtienne=WA.ui.openPopup("targetBas", "Je represente l'offre Cloud Sec & SecOps on se protège contre les attaques de pirates de l'espace !!", [{
+                label: "Close",
+                className: "primary",
+                callback: (popup) => {
+                    popup.close()
+                }
+            }]);
+            WA.room.onLeaveZone("Etienne",()=>{
+                msgEtienne.close();
+            });
+        ;}
+    })
+})
+WA.room.onLeaveZone("Etienne",()=>{
+    popEtienne.remove();
 });
 
 // Zone de RonanC
-let popRonan=null;
+let popRonan=null
+let msgRonan=null
+WA.room.onEnterZone("Ronan", () => {
+    popRonan=WA.ui.displayActionMessage({
+        message: "Parler à Ronan CARON",
+        callback: () => {
+            msgRonan=WA.ui.openPopup("targetHaut", "Je represente l'offre Cloud & Container consiste a moderniser les socles d'hébergement,\n par exemple faire des move to cloud ou de la conteneurisation", [{
+                label: "Close",
+                className: "primary",
+                callback: (popup) => {
+                    popup.close()
+                }
+            }]);
+            WA.room.onLeaveZone("Ronan",()=>{
+                msgRonan.close();
+            });
+        ;}
+    })
+})
+WA.room.onLeaveZone("Ronan",()=>{
+    popRonan.remove();
+});
 
-WA.room.onEnterZone('Ronan', () => {
-    popRonan = WA.ui.openPopup("targetHaut", "Ronan CARON : 'L'offre Cloud & Container consiste a moderniser les socles d'hébergement,\n par exemple faire des move to cloud ou de la conteneurisation'", [{
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
-        }
-    }]);
-});
-WA.room.onLeaveZone('Ronan',() =>{
-    popRonan.close();
-});
 
 // Zone de Robot
-let popRobot=null;
+let popRobot=null
+let msgRobot=null
+WA.room.onEnterZone("Robot", () => {
+    popRobot=WA.ui.displayActionMessage({
+        message: "Parler à RobOps",
+        callback: () => {
+            msgRobot=WA.ui.openPopup("targetHaut", "Bon.Jour Je M'app.Elle ROBOPS ! \n Tu peux Con.Tac.ter mOn E.Qui.pE Sur ces MailS : \n - infrastructureandcloudcomputingcommunity@wavestone.com Pour des In.fOs sur le fOnd \n - wod_all-nextgenit@wavestone.com pOur Con.trI.bUer a la Com.Unau.Te Next.GEn \n - wop-ida-nextgenit@wavestone.com poUr dEs de.Man.dEs Bu.si.NESS", [{
+                label: "Close",
+                className: "primary",
+                callback: (popup) => {
+                    popup.close()
+                }
+            }]);
+            WA.room.onLeaveZone("Robot",()=>{
+                msgRobot.close();
+            });
+        ;}
+    })
+})
+WA.room.onLeaveZone("Robot",()=>{
+    popRobot.remove();
+});
 
-WA.room.onEnterZone('Robot', () => {
-    popRobot = WA.ui.openPopup("targetBas", "Bon.Jour Je M'app.Elle ROBOPS ! \n Tu peux Con.Tac.ter mOn E.Qui.pE Sur ces MailS : \n - infrastructureandcloudcomputingcommunity@wavestone.com Pour des In.fOs sur le fOnd \n - wod_all-nextgenit@wavestone.com pOur Con.trI.bUer a la Com.Unau.Te Next.GEn \n - wop-ida-nextgenit@wavestone.com poUr dEs de.Man.dEs Bu.si.NESS'", [{
-        label: "Close",
-        className: "primary",
-        callback: (popup) => {
-            // Close the popup when the "Close" button is pressed.
-            popup.close();
-        }
-    }]);
-});
-WA.room.onLeaveZone('Robot',() =>{
-    popRobot.close();
-});
 
 //Zone de Yves
 let jokes ={1:{'joke':"Que se passe t’il quand deux poissons s’énervent ?",'sol':'Le thon monte'},
@@ -151,6 +203,7 @@ let jokes ={1:{'joke':"Que se passe t’il quand deux poissons s’énervent ?",
             19:{'joke':"C’est quoi une pomme dauphine ?",'sol':'C’est celle qui a fini 2eme à Miss patate'},
             20:{'joke':"Que font les dinosaures quand ils n’arrivent pas à se mettre d’accord ?",'sol':'Un tirajosor…'},
             }
+
 let YvesA=null
 WA.room.onEnterZone('Yves', () => {
     YvesA=WA.ui.displayActionMessage({
