@@ -94,6 +94,12 @@
          "id":10,
          "name":"exit",
          "opacity":1,
+         "properties":[
+                {
+                 "name":"exitUrl",
+                 "type":"string",
+                 "value":"..\/cercles.json"
+                }],
          "type":"tilelayer",
          "visible":true,
          "width":20,

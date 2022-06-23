@@ -136,7 +136,7 @@
                 {
                  "name":"exitUrl",
                  "type":"string",
-                 "value":""
+                 "value":"..\/cercles.json"
                 }],
          "type":"tilelayer",
          "visible":true,
@@ -743,8 +743,8 @@
          "columns":1,
          "firstgid":1359,
          "image":"..\/tilesets\/PNJ femme.png",
-         "imageheight":44,
-         "imagewidth":26,
+         "imageheight":54,
+         "imagewidth":32,
          "margin":0,
          "name":"PNJ femme",
          "spacing":0,
