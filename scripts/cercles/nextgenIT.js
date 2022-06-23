@@ -151,9 +151,9 @@ let jokes ={1:{'joke':"Que se passe t’il quand deux poissons s’énervent ?",
             19:{'joke':"C’est quoi une pomme dauphine ?",'sol':'C’est celle qui a fini 2eme à Miss patate'},
             20:{'joke':"Que font les dinosaures quand ils n’arrivent pas à se mettre d’accord ?",'sol':'Un tirajosor…'},
             }
-
+let YvesA=null
 WA.room.onEnterZone('Yves', () => {
-    exitA=WA.ui.displayActionMessage({
+    YvesA=WA.ui.displayActionMessage({
         message: "Parler à Yves",
         callback: () => {
         WA.controls.disablePlayerControls()
@@ -185,3 +185,7 @@ WA.room.onEnterZone('Yves', () => {
                     }
                 }]);
             ;}})})
+
+WA.room.onLeaveZone("Yves",()=>{
+            YvesA.remove()
+})
