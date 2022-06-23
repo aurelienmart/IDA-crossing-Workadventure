@@ -10,7 +10,6 @@ module.exports = {
         static: ['.'],
         hot:true,
         host: '0.0.0.0',
-        //host: 'localhost',
         port: 80,
         allowedHosts: "all",
         headers: {
